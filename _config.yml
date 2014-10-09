@@ -1,0 +1,36 @@
+# Site settings
+title: Your awesome title
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: ""  # the subpath of your site, e.g. /blog
+url: "http://example.com"  # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username: jekyll
+exclude: [excluded]
+permalink: pretty
+disqus_shortname: mysummerofcode
+
+defaults:
+  -  # Set the defaults for posts
+    scope:
+      path: ""  # folder name or part of the url; empty means all posts.
+      type: "posts"  # pages or posts or drafts or a collection; optional.
+    values:
+      layout: post
+      comments: true
+  -  # Set the defaults for pages
+    scope:
+      path: ""  # folder name or part of the url; empty means all posts.
+      type: "pages"  # pages or posts or drafts or a collection; optional.
+    values:
+      layout: post
+      comments: true
+
+# Build settings
+markdown: kramdown
+timezone: Europe/Brussels
+kramdown:
+  input: GFM  # Github Flavored Markdown

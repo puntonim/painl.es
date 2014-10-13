@@ -1,0 +1,136 @@
+<aside>
+  <div class="aside-content">
+  
+      <span class="intro">THIS IS...</span>
+      
+      <h1><a href="{{ site.baseurl }}/">paolo c.</a></h1>
+      <div class="social-brief">
+        <a href="https://github.com/nimiq/"><img src="{{ site.baseurl }}/assets/img/social/github.png" alt="Follow me on GitHub"></a>
+        <a href="http://www.linkedin.com/in/pcoffetti"><img src="{{ site.baseurl }}/assets/img/social/linkedin.png" alt="Connect with me on LinkedIN"></a>
+        <span class="envelop-tooltip-brief" onmouseover="mouseOverEnvelop(this)"><img src="{{ site.baseurl }}/assets/img/social/envelop.png" alt="My email address"><span class="text empty"><noscript>Javascript required!</noscript></span></span>
+      </div>
+      
+      <p class="description">
+        Software engineer.
+        <a href="https://www.python.org/">Python</a> enthusiast,
+        <a href="https://www.djangoproject.com/">Django</a> lover, 
+        <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a> contributor and
+        Google <a href="#">GSoC participant</a>.
+        Digital privacy paranoid.
+        And much more...
+      </p>
+
+      <ul class="social">
+        <li>
+          <a href="https://github.com/nimiq/">
+            <img src="{{ site.baseurl }}/assets/img/social/github.png" alt="Follow me on GitHub">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/pcoffetti">
+            <img src="{{ site.baseurl }}/assets/img/social/linkedin.png" alt="Connect with me on LinkedIN">
+          </a>
+        </li>
+        <li>
+          <div class="envelop-tooltip" onmouseover="mouseOverEnvelop(this)">
+            <img src="{{ site.baseurl }}/assets/img/social/envelop.png" alt="My email address">
+            <span class="text empty"><noscript>Javascript required!</noscript></span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="posts-and-projects-brief">
+          <a href="#" class="left">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+              </span>posts</a>
+              
+          <a href="#" class="left">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
+              </span>projects</a>
+      </div>
+
+      <!-- Posts -->
+      <div class="posts">
+        <h2>posts</h2>
+
+        <h3><i class="fa fa-clock-o"></i> 2014</h3>
+        {% for post in site.posts limit:3 %}
+          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+          {% if year == '2014' %}
+            <article>
+              <p>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncatewords: 5, '...' | downcase }}</a>
+                <time><i class="fa fa-calendar"></i> {{ post.date | date: '%d %B' }}</time>
+              </p>
+            </article>
+          {% endif %}
+        {% endfor %}
+
+        <span style="opacity: .5; font-size: 0.8em;">
+          <a href="#" style="font-weight: 300">
+            <i class="fa fa-arrow-circle-right"></i>
+            All posts...
+          </a>
+        </span>
+
+      </div>
+      
+      <!-- Projects -->
+      <div class="projects">
+        <h2>projects</h2>
+
+        <article>
+          <p class="name">
+            <a href="#">
+              <img src="{{ site.baseurl }}/assets/img/projects/moogle.png" alt="Moogle icon">Moogle
+            </a>
+          </p>
+        </article>
+
+        <article>
+          <p class="name">
+            <a href="#">
+              <img src="{{ site.baseurl }}/assets/img/projects/promptastic.png" alt="Promptastic icon">Promptastic
+            </a>
+          </p>
+        </article>
+    
+        <article>
+          <p class="name">
+            <a href="#">
+              <img src="{{ site.baseurl }}/assets/img/projects/docker.png" alt="Docker-PostgreSQL icon">Docker-Postgres
+            </a>
+          </p>
+        </article>
+    
+        <article>
+          <p class="name">
+            <a href="#">
+              <img src="{{ site.baseurl }}/assets/img/projects/ansible.png" alt="Ansible-Biostar icon">Ansible-Biostar
+            </a>
+          </p>
+        </article>
+    
+        <article>
+          <p class="name">
+            <a href="#">
+              <img src="{{ site.baseurl }}/assets/img/projects/neurostars.png" alt="NeuroStars icon">NeuroStars
+            </a>
+          </p>
+        </article>
+
+        <span style="opacity: .5; font-size: 0.8em">
+          <a href="#" style="font-weight: 300">
+            <i class="fa fa-arrow-circle-right"></i>
+            All projects...
+          </a>
+        </span>
+
+      </div> <!-- .projects -->
+
+  </div> <!-- .aside-content -->
+</aside>

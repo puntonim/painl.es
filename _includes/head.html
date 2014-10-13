@@ -1,0 +1,58 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="author" content="nimiq">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:image" content="/assets/img/open-graph/7.png">
+
+  <!-- TODO see twitter cards and open graph in my blog -->
+
+  <meta name="description" content="
+    {% if page.excerpt %}
+      {{ page.excerpt }}
+    {% else %}
+      Paolo C.: Software Egineer. Python, Django, FOSS, Google GSoC, Moogle, Promptastic.
+    {% endif %}
+  ">
+  
+  <meta name="keywords" content="
+    {% if page.tags %}
+      {{ page.tags | array_to_sentence_string }}
+    {% else %}
+      paolo, software engineering, web development, python, django, foss, gsoc, moogle, promptastic
+    {% endif %}
+  ">
+  
+  <title>
+    {% if page.title %}
+      {{ page.title }}
+    {% else %}
+      This is Paolo C.
+    {% endif %}
+  </title>
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/static/images/touch_icon.png">
+  <link rel="alternate" type="application/atom+xml" title="RSS feed for {{ site.url }}{{ site.baseurl }}" href="/atom.xml">
+
+  {% if page.cssfile %}
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ page.cssfile }}">
+  {% endif %}
+
+  {% if page.jsfile %}
+    <script src="{{ page.jsfile }}"></script>
+  {% endif %}
+
+  <!-- TODO google analytics 
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script> -->
+</head>

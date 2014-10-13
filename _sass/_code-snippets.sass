@@ -1,0 +1,90 @@
+// Code snippet highlighting in Jekyll
+// http://jekyllrb.com/docs/templates/#code-snippet-highlighting
+
+// Using the main css file used by GitHub, available at:
+// https://github.com/mojombo/tpw/tree/master/css/syntax.css
+@import _pygments-github
+
+pre, code, table.highlighttable
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
+
+table.highlighttable
+  $font-size: .71rem
+  font-size: $font-size
+  $line-height: 1.06rem
+  line-height: $line-height
+  margin-left: 2%
+  width: 98%
+
+  pre, div.highlight
+    background-color: transparent  // cause the default is white
+
+  // Reset <pre> cause we override it later
+  pre  
+    font-size: $font-size
+    line-height: $line-height
+    border: 0
+    margin: 0
+    padding: 0
+
+  td
+    padding-top: .5rem
+    padding-bottom: .5rem
+
+  td.linenos // The line numer column
+    text-align: right
+    color: rgba(0, 0, 0, 0.3)
+    border-right: .18rem solid $gray-color
+    padding-right: .3rem
+    a
+      font-size: $font-size
+      text-decoration: none
+      font-weight: 100
+      color: rgba(0, 0, 0, 0.3)
+
+  td.code
+    //padding-left: .3rem
+    background-color: $very-light-gray-color
+
+    $corner-radius: .4rem
+    -webkit-border-top-right-radius: $corner-radius
+    -webkit-border-bottom-right-radius: $corner-radius
+    -moz-border-radius-topright: $corner-radius
+    -moz-border-radius-bottomright: $corner-radius
+    border-top-right-radius: $corner-radius
+    border-bottom-right-radius: $corner-radius
+
+  .highlight pre span
+    display: block
+    padding-left: .4rem
+    span
+      display: inline
+      padding: 0
+    &:hover
+      background-color: rgb(234, 234, 234)
+
+p code
+  font-size: .8rem
+  background-color: $light-gray-color
+  padding: .3rem .3rem .3rem .3rem
+  $corner-radius: .2rem
+  -webkit-border-radius: $corner-radius
+  -moz-border-radius: $corner-radius
+  border-radius: $corner-radius
+
+pre
+  font-size: .8rem
+  line-height: 1rem
+  background-color: $very-light-gray-color
+  border-left: .3rem solid $gray-color
+  margin-left: 3%
+  padding-left: .5rem
+  padding-top: .3rem
+  padding-bottom: .3rem
+  $corner-radius: .4rem
+  -webkit-border-top-right-radius: $corner-radius
+  -webkit-border-bottom-right-radius: $corner-radius
+  -moz-border-radius-topright: $corner-radius
+  -moz-border-radius-bottomright: $corner-radius
+  border-top-right-radius: $corner-radius
+  border-bottom-right-radius: $corner-radius

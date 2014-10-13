@@ -1,0 +1,30 @@
+---
+layout: base
+cssfile: "/assets/css/post.css"
+---
+<div class="wrapper">
+
+  {% include post-aside.html %}
+
+  <div class="content">
+    <header class="content-header">
+      <span class="tags">
+        {% for tag in page.tags %}
+            {{ tag }}{% if forloop.last == false %} • {% endif %} 
+        {% endfor %}
+      </span>
+      <h1>{{ page.title }}</h1>
+      <time><i class="fa fa-calendar"></i> {{ page.date | date: '%B %d, %Y' }}</time>
+    </header>
+
+    <div class="content-post">
+      {{ content }}
+
+      {% if site.disqus_shortname and page.comments %}
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      {% endif %}
+    </div>
+
+  </div>
+</div>

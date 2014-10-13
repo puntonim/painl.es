@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    {{ content }}
+  </body>
+
+  <!-- The next section at the end of the body is the right place for pure Javascript code (not frameworks). Frameworks like jQuery instead should be loaded in the <head> section -->
+  {% include inject-email.js %}
+  {% include disqus.js %}
+
+</html>

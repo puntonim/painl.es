@@ -21,6 +21,7 @@ defaults:
     values:
       layout: post
       comments: true
+      pagination: true
   -  # Set the defaults for pages
     scope:
       path: ""  # folder name or part of the url; empty means all posts.
@@ -28,6 +29,7 @@ defaults:
     values:
       layout: post
       comments: true
+      pagination: false
 
 # Build settings
 markdown: kramdown

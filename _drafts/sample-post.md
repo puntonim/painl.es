@@ -23,6 +23,56 @@ Biostar and Neurostars provide a cool feature related to post editing: users can
 
 Cras lacinia rutrum nisl, convallis pharetra eros vulputate vitae. Donec fermentum metus a orci condimentum pharetra. Sed sit amet pharetra est, non posuere erat. Morbi venenatis eget eros in semper.
 
+
+<div class="table_of_contents"> <!-- Note the class -->
+  <ul>
+    <li class="title">Table of Contents</li> <!-- Note the class -->
+    <li><a href="#suspendisse-sollicitudin-mauris">Suspendisse sollicitudin mauris</a>
+      <ul>
+        <li><a href="#quisque-vel-nunc-leo">Quisque vel nunc leo</a></li>
+      </ul>
+    </li>
+    <li><a href="#in-varius-sagittis-lacus">In varius sagittis lacus</a>
+      <ul>
+        <li><a href="#suspendisse-sollicitudin-mauris-ut-tempus-vulputate">Suspendisse sollicitudin mauris ut tempus vulputate</a>
+          <ul>
+            <li><a href="#quisque-vel-nunc-leo-1">Quisque vel nunc leo</a>
+              <ul>
+                <li><a href="#nullam-aliquet-magna-id-urna-efficitur-fringilla">Nullam aliquet magna id urna efficitur fringilla</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#ut-metus-diam-fermentum-cursus">Ut metus diam, fermentum cursus</a>
+      <ul>
+        <li><a href="#porttitor-at-porttitor-vitae-risus">Porttitor at, porttitor vitae risus</a>
+          <ul>
+            <li><a href="#vivamus-dictum-mollis-dolor">Vivamus dictum mollis dolor</a>
+              <ul>
+                <li><a href="#sit-amet-laoreet-dolor-vestibulum-sed">Sit amet laoreet dolor vestibulum sed</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#code">Code</a></li>
+    <li class="last"> <!-- Note the class -->
+      <a href="#figures">Figures</a>
+      <ul><li>
+        <ul><li>
+          <ul><li>
+            <a href="#sit-amet-laoreet-dolor-vestibulum-sed-1">Sit amet laoreet dolor vestibulum sed</a>
+          </li></ul>
+        </li></ul>
+      </li></ul>
+    </li>
+  </ul>
+</div>
+
+
 # Suspendisse sollicitudin mauris
 Suspendisse sollicitudin mauris ut tempus vulputate. Sed id mi pharetra, volutpat libero vitae, cursus dolor. Nam at neque varius, condimentum nulla viverra, commodo elit. Fusce faucibus a nisi vitae varius. Suspendisse a luctus dui, quis porta urna. Nunc tincidunt, felis id luctus auctor, metus nulla suscipit elit, quis dictum lacus orci et nibh.
 

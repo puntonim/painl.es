@@ -22,6 +22,14 @@ defaults:
       layout: post
       comments: true
       pagination: true
+  -  # Set the defaults for drafts (keep them the same as for posts)
+    scope:
+      path: ""  # folder name or part of the url; empty means all posts.
+      type: "drafts"  # pages or posts or drafts or a collection; optional.
+    values:
+      layout: post
+      comments: true
+      pagination: true
   -  # Set the defaults for pages
     scope:
       path: ""  # folder name or part of the url; empty means all posts.

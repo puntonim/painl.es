@@ -1,0 +1,26 @@
+---
+# Set the layout (default: page)
+#layout: page
+title:  "Posts"
+# To define an excerpt to be used as proper excerpt or/and as meta="description" in the <head> and in the RSS feed; it should be a sort of summary of the post:
+excerpt: "List of all posts"
+# To force a permalink (default: /year/month/day/title.html)
+permalink: /posts/index.html
+# To set the published status
+#published: false
+# Set to false to deactivate disqus comments (default: true)
+#comments: false
+---
+
+<h1><i class="fa fa-clock-o"></i> 2014</h1>
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% if year == '2014' %}
+    <article>
+      <p>
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><h2>
+        <time><i class="fa fa-calendar"></i> {{ post.date | date: '%d %B' }}</time>
+      </p>
+    </article>
+  {% endif %}
+{% endfor %}

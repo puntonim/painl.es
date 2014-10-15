@@ -27,9 +27,8 @@ defaults:
       path: ""  # folder name or part of the url; empty means all posts.
       type: "pages"  # pages or posts or drafts or a collection; optional.
     values:
-      layout: post
-      comments: true
-      pagination: false
+      layout: page
+      comments: false
 
 # Build settings
 markdown: kramdown

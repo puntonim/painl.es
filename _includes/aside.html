@@ -40,13 +40,13 @@
       </ul>
 
       <div class="posts-and-projects-brief">
-          <a href="#" class="left">
+          <a href="{{ site.baseurl }}/posts/" class="left">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
               </span>posts</a>
               
-          <a href="#" class="left">
+          <a href="{{ site.baseurl }}/projects/" class="left">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
@@ -55,7 +55,7 @@
 
       <!-- Posts -->
       <div class="posts">
-        <h2>posts</h2>
+        <h2><a href="{{ site.baseurl }}/posts/">posts</a></h2>
 
         <h3><i class="fa fa-clock-o"></i> 2014</h3>
         {% for post in site.posts limit:3 %}
@@ -70,10 +70,9 @@
           {% endif %}
         {% endfor %}
 
-        <span style="opacity: .5; font-size: 0.8em;">
-          <a href="#" style="font-weight: 300">
-            <i class="fa fa-arrow-circle-right"></i>
-            All posts...
+        <span class="more">
+          <a href="{{ site.baseurl }}/posts/">
+            <i class="fa fa-arrow-circle-right"></i>All posts...
           </a>
         </span>
 
@@ -81,8 +80,8 @@
       
       <!-- Projects -->
       <div class="projects">
-        <h2>projects</h2>
-
+        <h2><a href="{{ site.baseurl }}/projects/">projects</a></h2>
+        
         <article>
           <p class="name">
             <a href="#">
@@ -123,10 +122,9 @@
           </p>
         </article>
 
-        <span style="opacity: .5; font-size: 0.8em">
-          <a href="#" style="font-weight: 300">
-            <i class="fa fa-arrow-circle-right"></i>
-            All projects...
+        <span class="more">
+          <a href="{{ site.baseurl }}/projects/">
+            <i class="fa fa-arrow-circle-right"></i>All projects...
           </a>
         </span>
 

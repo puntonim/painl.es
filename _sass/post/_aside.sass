@@ -9,6 +9,7 @@ aside
   right: auto
   width: 23%
   min-width: 12rem
+  max-width: 20rem
   padding-top: 3rem
   padding-left: 0.5rem
   padding-right: 0.3rem
@@ -20,6 +21,8 @@ aside
     width: 100%
     padding-top: 1rem
     padding-left: 1rem
+    max-width: none
+
   .intro
     font-family: "Open Sans Condensed", Futura, sans-serif
     font-size: 1.17rem
@@ -95,10 +98,23 @@ aside .posts, aside .projects
     margin-bottom: 0.3rem
     @media (max-width: 979px)
       font-size: 1.6rem
+    a
+      text-decoration: none
+      font-weight: normal
   a:hover
     color: $orange-yellow-color
   @media (max-width: 800px)
     display: none
+  span.more
+    font-size: .75rem
+    a
+      font-weight: 300
+      color: $green-bg-opacity-50-color
+      &:hover
+        color: $orange-yellow-color
+    .fa
+      margin-right: .2rem
+      margin-top: .7rem
 
 aside .posts
   float: left
@@ -151,6 +167,7 @@ aside .posts-and-projects-brief
     font-family: "BritannicEF-Bold", serif
     font-weight: 100
     font-size: 1.4rem
+    text-decoration: none
     &:hover
       color: $orange-yellow-color
     .fa-stack

@@ -1,17 +1,29 @@
 @import post/main
 
-.content-container
-  .content-header
+div.content-container
+  header.content-header
+    color: white
+    background-color: $green-bg-color
+    float: right
+    padding: .2rem .5rem .2rem .7rem
+    $corner-radius: 1rem
+    -webkit-border-top-left-radius: $corner-radius
+    -webkit-border-bottom-left-radius: $corner-radius
+    -moz-border-radius-topleft: $corner-radius
+    -moz-border-radius-bottomleft: $corner-radius
+    border-top-left-radius: $corner-radius
+    border-bottom-left-radius: $corner-radius
+
     h1
-      font-family: inherit
-      font-size: 3.5rem
+      font-family: "BritannicEF-Bold", serif
+      text-transform: lowercase
+      font-size: 4rem
       font-style: normal
       font-weight: 900
       line-height: 1
-      letter-spacing: -.15rem
-      text-shadow: .1rem .1rem $light-gray-color
 
-  .content
+  div.content
+    clear: both
     h1
       margin-top: 3rem
       margin-bottom: 1rem
@@ -20,24 +32,3 @@
       letter-spacing: -.15rem
       border-bottom: none
       text-shadow: .1rem .1rem $light-gray-color
-
-    // article
-    //   clear: both
-    //   border-bottom: 1px dotted $gray-color
-    //   font-size: 1rem
-    //   line-height: 1rem
-    //   height: 1.2rem
-    //   margin-bottom: .5rem
-    //   div
-    //     float: left
-    //   a
-    //     //float: left
-    //     line-height: 1rem
-    //     font-size: 1rem
-    //     font-weight: 100
-    //     text-decoration: none
-    //     &:hover
-    //       color: $orange-yellow-color
-    //   time
-    //     float: right
-    //     line-height: 1rem

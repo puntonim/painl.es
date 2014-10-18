@@ -1,22 +1,30 @@
 ---
-# Set the layout (default: post)
+# The layout (config default: post)
 #layout: post
-title:  "Sample post"
-tags: [jekyll, sample, post]
-# To define an excerpt to be used as proper excerpt or/and as meta="description" in the <head> and in the RSS feed; it should be a sort of summary of the post:
+# Title (default: see config)
+title:  "Post template title"
+# Tags (default: see config)
+tags: [jekyll, template, post]
+# The excerpt is used as a sort of summary of the post in the page metadata (default: see config)
 excerpt: "This is a sample post to test many features and styles with the current configuration of Jekyll"
-# To force a permalink (default: /year/month/day/title.html)
-#permalink: /foo/bar/index.html
-# To override the default date taken from the file name
+# The permalink (system default: "/year/month/day/title.html")
+#permalink: "/foo/bar/index.html"
+# The date (system default: taken from the file name)
 #date: 2014-10-06 15:57:07
 # To pretend this post is inside folders like: /foo/bar/year/month/day/title.html
 #categories: [foo, bar]
-# To set the published status
-#published: false
-# Set to false to deactivate disqus comments (default: true)
+# Published status: false to hide the post (system default: true)
+published: false
+# Comments: false to deactivate disqus comments (config default: true)
 #comments: false
-# Set to false to hide the pagination (default: true)
+# Pagination: false to hide the pagination (config default: true)
 #pagination: false
+# The main css file (default: see config)
+#cssfile: "/assets/css/post.css"
+# The type used in the metadata, values: website, article, other (config default: article)
+#ogtype: article
+# The image used in the metadata (default: see config)
+#ogimage: "/assets/img/site-logos/7.png"
 ---
 
 Biostar and Neurostars provide a cool feature related to post editing: users can easily add links to other *italic* and *users* and embed snippets of code from **Bold** and videos from *YouTube*. Lorem ipsum dolor sit amet, [consectetur](http://io.com) **consectetur** *consectetur* adipiscing elit. Nulla rhoncus nec ipsum non pulvinar. Suspendisse facilisis eros ac ante dignissim, nec dictum purus dictum. Donec sed sollicitudin enim. Etiam in ultricies elit.

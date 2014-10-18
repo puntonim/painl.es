@@ -64,7 +64,7 @@
       &:hover
         background-color: rgb(234, 234, 234)
 
-  p code
+  code
     font-size: .8rem
     background-color: $light-gray-color
     padding: .3rem .3rem .3rem .3rem
@@ -89,3 +89,11 @@
     -moz-border-radius-bottomright: $corner-radius
     border-top-right-radius: $corner-radius
     border-bottom-right-radius: $corner-radius
+    // Reset <code> cause we changed it before
+    code
+      background-color: transparent
+      padding: 0
+      $corner-radius: 0
+      -webkit-border-radius: $corner-radius
+      -moz-border-radius: $corner-radius
+      border-radius: $corner-radius

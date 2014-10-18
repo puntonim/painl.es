@@ -16,8 +16,8 @@ google_analytics_tracking_id: "UA-50794571-2"
 # Build settings
 markdown: kramdown
 timezone: Europe/Brussels
-kramdown:
-  input: GFM  # Github Flavored Markdown
+#kramdown:
+#  input: GFM  # Github Flavored Markdown
 
 # Defaults
 defaults:

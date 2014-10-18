@@ -11,6 +11,7 @@ url: "http://painl.es"
 exclude: [excluded, README.md, LICENSE, Gemfile]
 permalink: pretty
 disqus_shortname: painl.es
+google_analytics_tracking_id: "UA-50794571-2"
 
 # Build settings
 markdown: kramdown

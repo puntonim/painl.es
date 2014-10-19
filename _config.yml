@@ -1,9 +1,9 @@
 # Site settings
 title: Paolo C.
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: &DESCRIPTION_VAL > # `>` means to ignore newlines until the next var
+  Paolo C.'s professional website and blog. Software engineer. Python enthusiast, Django lover,
+  FOSS contributor and Google GSoC participant. Digital privacy paranoid. Co–author of
+  'Security and Usability', published by O'Reilly Media. And much more...
 # The subpath of your site, e.g. /blog
 baseurl: ""
 # The base hostname and protocol for your site
@@ -28,7 +28,7 @@ defaults:
     values: &DEFAULTS_POSTS_VAL  # &DEFAULTS_POSTS_VAL defines a node anchor
       layout: post
       title: "This is Paolo C."
-      excerpt: "Paolo C.: Software Egineer. Python, Django, FOSS, Google GSoC, Moogle, Promptastic."
+      excerpt: *DESCRIPTION_VAL
       tags: ["paolo c.", "software engineer", "web development", "python", "django", "foss", "gsoc", "moogle", "promptastic", "neurostar", "biostar"]
       comments: true
       pagination: true

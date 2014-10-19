@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Embed Tweets in Posts"
-excerpt: "Embed tweets in posts"
-tags: [gsoc, neurostars, biostar, tweets, embed]
+title: "Embed Tweets in NeuroStars Posts"
+excerpt: "NeuroStars: embed tweets in posts"
+tags: [gsoc, neurostars, biostar, tweet, embed]
 ---
 
 [BioStar](https://github.com/ialbert/biostar-central/) and [NeuroStars]({{ site.baseurl }}/neurostars/)

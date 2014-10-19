@@ -5,12 +5,12 @@
 
   <body>
     {{ content }}
+    
+    <!-- The next section at the end of the body is the right place for pure Javascript code (not frameworks). Frameworks like jQuery instead should be loaded in the <head> section -->
+    {% include inject-email.js %}
+    {% if site.disqus_shortname and page.comments %}
+      {% include disqus.js %}
+    {% endif %}
+
   </body>
-
-  <!-- The next section at the end of the body is the right place for pure Javascript code (not frameworks). Frameworks like jQuery instead should be loaded in the <head> section -->
-  {% include inject-email.js %}
-  {% if site.disqus_shortname and page.comments %}
-    {% include disqus.js %}
-  {% endif %}
-
 </html>

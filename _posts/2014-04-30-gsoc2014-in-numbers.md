@@ -13,6 +13,7 @@ tags: [gsoc]
 </figure>
 
 [Google Summer of Code 2014](https://developers.google.com/open-source/soc/?csw=1) in numbers:
+
 - 190 mentoring organizations
 - 4.420 candidates
 - 6.313 proposals

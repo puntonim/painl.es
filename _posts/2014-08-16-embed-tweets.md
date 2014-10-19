@@ -2,12 +2,15 @@
 layout: post
 title: "Embed Tweets in Posts"
 excerpt: "Embed tweets in posts"
-tags: [tweets, embed, post]
+tags: [gsoc, neurostars, biostar, tweets, embed]
 ---
 
-Biostar and Neurostars provide a cool feature related to post editing: users can easily add links to other *posts* and *users* and embed snippets of code from *Gist* and videos from *YouTube*.
+[BioStar](https://github.com/ialbert/biostar-central/) and [NeuroStars]({{ site.baseurl }}/neurostars/)
+provide a cool feature related to post editing: users can easily add links to other *posts*
+and *users* and embed snippets of code from *Gist* and videos from *YouTube*.
 
-Today I implemented the support for tweets from *Twitter*. This feature will be soon deployed to live.
+Today, during my [GSoC2014](https://developers.google.com/open-source/soc/?csw=1), I
+implemented the support for tweets from *Twitter*. This feature will be soon deployed to live.
 
 Some screenshot from our preview website:
 

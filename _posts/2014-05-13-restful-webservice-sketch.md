@@ -1,11 +1,18 @@
 ---
 layout: post
-title: "API Sketch"
-excerpt: "API sketch starting from what has been done in Biostar 1"
-tags: [api, rest]
+title: "NeuroStars RESTful Webservice Sketch"
+excerpt: "RESTful Webservice"
+tags: [gsoc, neurostars, biostar, rest, webservice, api]
 ---
 
-Building a [RESTful API](http://en.wikipedia.org/wiki/RESTful_API) will probably be my first activity for Neurostars: it is a good opportunity for me to get an overview of the codebase. Some work have already been done in *Biostar 1* and that could be the starting point.
+Building a [RESTful Webservice](http://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services)
+will probably be my first activity for [NeuroStars]({{ site.baseurl }}/neurostars/) during
+[GSoC2014](https://developers.google.com/open-source/soc/?csw=1): 
+it is a good opportunity for me to get an overview of the codebase.
+
+Some work have already been done in
+[BioStar v1.0](https://github.com/ialbert/biostar-central/tree/v1.0)
+and that could be the starting point.
 
 <div class="table_of_contents">
   <ul>
@@ -68,7 +75,7 @@ Building a [RESTful API](http://en.wikipedia.org/wiki/RESTful_API) will probably
 
 # API In Biostar 1
 
-A simple API was built for [Biostar 1](https://github.com/ialbert/biostar-central/blob/biostar1/main/server/api.py).
+A simple API was built for [BioStar v1.0](https://github.com/ialbert/biostar-central/blob/biostar1/main/server/api.py).
 The available methods are:
 
 ## 1. Traffic
@@ -125,7 +132,7 @@ General info about a user.
 `GET api/post/<id>`
 
 ### Response
-{% highlight json linenos=table linespans=line anchorlinenos=true lineanchors=postdetails %}
+{% highlight json %}
 {
     "answer_count": 0, 
     "author": "John Doe", 
@@ -172,77 +179,94 @@ General info about a post.
 {% endhighlight %}
 
 ### Description
-Website statistics from day-0 until \<days\> days ago. 
+Website statistics from day-0 until `<days>` days ago. 
 
 ### Possible Improvements
-- Clearly state the date interval.  
+- Clearly state the date interval.   
 In the response we could use the fields `date_from` (day-0) and `date_until`.
-- The code is currently broken.  
+- The code is currently broken.   
 The cause is a name clash between the variable `json` and the module `json`.
-- \<days\> might be not user friendly.  
-*Istvan* pointed out that counting backwards from the current day seems to be simple to use, as it answers questions like: "What was posted ten days ago?". But this makes life harder for people who want to mine our system periodically. He suggests to count forward from day-0.  
+- `<days>` might be not user friendly.   
+*Istvan* pointed out that counting backwards from the current day seems to be simple to use,
+as it answers questions like: "What was posted ten days ago?". But this makes life harder for
+people who want to mine our system periodically. He suggests to count forward from day-0.  
 I guess we could accept 3 mutually exclusive parameters:
-    - `until` to provide stats from day-0 until `until`.
-    - `days_ago` to provide stats from day-0 until `days_ago` days ago.
+    
+    - `until` to provide stats from day-0 until `until`;
+    - `days_ago` to provide stats from day-0 until `days_ago` days ago;
     - `days_from_zero` to provide stats from day-0 until day-0 + `days_from_zero`.  
-As *Istvan* suggests we could also generate these files every day (it's a matter of 1 file per day) and serve them as static files.
 
-- Cached files could grow indefinitely.
-I like the idea of caching statistics in json files, but we have to consider that those files could grow indefinitely. We must monitor this, f.i. we could set a threshold of N files and when reached, delete the file with the oldest modification timestamp.  
+- Cached files could grow indefinitely.   
+I like the idea of caching statistics in json files, but we have to consider that those files
+could grow indefinitely. We must monitor this, f.i. we could set a threshold of N files and when
+reached, delete the file with the oldest modification timestamp.
 We might simply ignore this point as it is a matter of one small text file per day.
+As *Istvan* suggests we could also generate these files every day (it's a matter of 1 file
+per day) and serve them as static files.
 
-# API In Biostar 2
+# API In BioStar 2
 
-Biostar 2 has no API so far. 
-Porting Biostar 1 API to Biostar 2 should be not too hard but my impression is that the code requires some love before being ported. A solid design is also required if we plan to create a complete set of functionalities.
+[BioStar v2](https://github.com/ialbert/biostar-central/) has no API so far. 
+Porting Biostar v1 API to Biostar v2 should be not too hard but my impression is that the code
+requires some love before being ported. A solid design is also required if we plan to create a
+exhaustive set of API methods.
 
 ## Ideas
 
 Apart from the possible improvements I've already mentioned above, we could consider some of the followings.
 
 ### a. Questions Endpoint
-- Get the most recent questions (filtering by id, date, tags, author, popularity, unanswered status, votes, bookmarks).
-- Create/edit a question.
-- Delete a question I have authored.
+- Get the most recent questions (filtering by id, date, tags, author, popularity, unanswered
+status, votes, bookmarks);
+- Create/edit a question;
+- Delete a question I have authored;
 - Vote/bookmark a question.
 
 ### b. Answers Endpoint
-- Get the most recent answers (filtering by id, question, date, author, votes, bookmarks).
-- Create/edit a answer.
-- Delete a answer I have authored.
-- Vote/bookmark a answer.
-- Accept/refuse answers if I'm the author of the question.
+- Get the most recent answers (filtering by id, question, date, author, votes, bookmarks);
+- Create/edit a answer;
+- Delete a answer I have authored;
+- Vote/bookmark a answer;
+- Accept/refuse answers for the author of the question.
 
 ### c. Comments Endpoint
-- Get the most recent comments (filtering by id, question, answers, date, author, votes).
-- Create/edit a comment.
+- Get the most recent comments (filtering by id, question, answers, date, author, votes);
+- Create/edit a comment;
 - Vote a comment.
 
 ### d. Search Endpoint
-- Search for posts (questions, answers, comments) meeting certain criteria.
+- Search for posts (questions, answers, comments) meeting certain criteria;
 - Search for similar questions.
 
 ### e. Users Endpoint
-- Get users list.
-- Get user profile.
-- Get posts (questions, answers, comments) authored by a user ordered by date or popularity (votes, views, answers).
+- Get users list;
+- Get user profile;
+- Get posts (questions, answers, comments) authored by a user ordered by date or popularity
+(votes, views, answers).
 
 ### f. Authentication
-Some of those methods require authentication, by meaning f.i. that only authenticated users could post a question.
+Some of those methods require authentication, by meaning f.i. that only authenticated users could
+post a question.
 
 ### g. Versioning
-I suggest we first introduce a small set of methods and then gradually extend it. This requires us to use version numbers like:
+I suggest we first introduce a small set of methods and then gradually extend it. This requires
+us to use version numbers like:
 `api.biostars.org/1.0/answers`
 
 ### h. Semantic backend
-*Satrajit* has a plan to build a semantic backend for Biostar. This would let Biostar interact with external websites: f.i. we could provide any website with a button "ask this in Biostar" to automatically post a new question. This semantic backend would work together with the API, we should keep this in mind!
+*Satrajit* has a plan to build a semantic backend for Biostar. This would let BioStar interact
+with external websites: f.i. we could provide any website with a button "ask this in Biostar" to
+automatically post a new question. This semantic backend would work together with the API, we
+should keep this in mind!
 
 
 ## Notes
 
-Building such API is a major benefit for our project since it gives developers the ability to create new user interfaces like mobile applications.
+Building such API is a major benefit for our project since it gives developers the ability to
+create new user interfaces like mobile applications.
 
-We must take inspiration from the very well designed [StackOverflow API](http://api.stackexchange.com/docs/).
+We must take inspiration from the very well designed
+[StackOverflow API](http://api.stackexchange.com/docs/).
 
 ## Tools
 [Django REST Framework](http://www.django-rest-framework.org/)

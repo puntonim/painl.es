@@ -1,36 +1,37 @@
 ---
 layout: post
-title: "Integration with ORCID"
-excerpt: "Integrating ORCID in Neurostars"
-tags: [orcid, api, oauth, django-allauth]
+title: "Integrating ORCID in NeuroStars"
+excerpt: "Integrating ORCID in NeuroStars"
+tags: [gsoc, neurostars, biostar, orcid, api, oauth, django-allauth]
 ---
 
 <i class="fa fa-quote-left"></i> *[ORCID](http://orcid.org/) provides a persistent digital identifier that distinguishes you from every other researcher and, through integration in key research workflows such as manuscript and grant submission, supports automated linkages between you and your professional activities ensuring that your work is recognized* <i class="fa fa-quote-right"></i>
 
-We would like to integrate [ORCID](http://orcid.org/) in Neurostars, providing two new features:
+We would like to integrate [ORCID](http://orcid.org/) in
+[NeuroStars]({{ site.baseurl }}/neurostars/) during
+[GSoC2014](https://developers.google.com/open-source/soc/?csw=1), providing two new features:
 
 - Signup/login using a ORCID account (via OAuth);
-- Import data from a ORCID profile to a Neurostars profile.
+- Import data from a ORCID profile to a NeuroStars profile.
 
----
-
-**Table of Contents**
-
-- [OAuth](#oauth)
-- [Public vs member ORCID API](#public-vs-member-orcid-api)
-- [Sandbox vs production ORCID API](#sandbox-vs-production-orcid-api)
-- [Client apps registration](#client-apps-registration)
-- [OAuth Flow](#oauth-flow)
-- [Fetching Profile Data](#fetching-profile-data)
-- [Response](#response)
-- [Profile Data Reuse Policy](#profile-data-reuse-policy)
-- [Conclusion](#conclusion)
-
----
+<div class="table_of_contents">
+  <ul>
+    <li class="title">Table of Contents</li>
+    <li><a href="#oauth">OAuth</a></li>
+    <li><a href="#public-vs-member-orcid-api">Public vs member ORCID API</a></li>
+    <li><a href="#sandbox-vs-production-orcid-api">Sandbox vs production ORCID API</a></li>
+    <li><a href="#client-apps-registration">Client apps registration</a></li>
+    <li><a href="#oauth-flow">OAuth Flow</a></li>
+    <li><a href="#fetching-profile-data">Fetching Profile Data</a></li>
+    <li><a href="#response">Response</a></li>
+    <li><a href="#profile-data-reuse-policy">Profile Data Reuse Policy</a></li>
+    <li class="last"><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</div>
 
 OAuth
 =====
-ORCID supports [OAuth](http://en.wikipedia.org/wiki/Oauth) which is meant for resource owners to authorize third-party access to their server resources without sharing their credentials.
+*ORCID* supports [OAuth](http://en.wikipedia.org/wiki/Oauth) which is meant for resource owners to authorize third-party access to their server resources without sharing their credentials.
 It can also be used to identify and thus sign up a user.
 
 There are two solid libraries we can use to integrate the OAuth protocol in Django:
@@ -43,9 +44,16 @@ We decided to fork and extend the original **django-allauth** library and add th
 
 Public vs Member ORCID API
 ==========================
-*"ORCID offers two APIs, the **Public API** which can be used by anyone to search the ORCID Registry and retrieve public information, and the Member API. The **Member API** is available only to ORCID members and allows them to authenticate researchers, access read-limited information, and edit ORCID records- as long as they have the researcher's permission."*
+<i class="fa fa-quote-left"></i>  *ORCID offers two APIs, the **Public API** which can be used by
+anyone to search the ORCID Registry and retrieve public information, and the Member API.
+The **Member API** is available only to ORCID members and allows them to authenticate researchers,
+access read-limited information, and edit ORCID records- as long as they have the researcher's
+permission* <i class="fa fa-quote-right"></i> 
 
-*Public API* is a free read-only API with limited functionality, usable for the OAuth login process and to read users' profile data; *Member API* instead requires an organization account and a subscription with ORCID (so it is not free) and offers more functionalities (it can also write to ORCID on behalf of users).
+*Public API* is a free read-only API with limited functionality, usable for the OAuth login
+process and to read users' profile data; *Member API* instead requires an organization account
+and a subscription with ORCID (so it is not free) and offers more features (it can also write to
+ORCID on behalf of users).
 
 Reference:
 
@@ -56,7 +64,12 @@ Reference:
 
 Sandbox vs Production ORCID API
 ===============================
-*"The ORCID **development sandbox** is designed to resemble the production Registry as closely as possible, the only notable differences are with with the Import Works function and that the sandbox does not send email messages to most email addresses. Occasionally, the sandbox will be one version ahead of the Production Registry to allow for API developer testing, when this happens we will notify the API Users Group."*
+<i class="fa fa-quote-left"></i> *The ORCID **development sandbox** is designed to resemble the
+production Registry as closely as possible, the only notable differences are with with the Import
+Works function and that the sandbox does not send email messages to most email addresses.
+Occasionally, the sandbox will be one version ahead of the Production Registry to allow for API
+developer testing, when this happens we will notify the API Users Group*
+<i class="fa fa-quote-right"></i>  
 
 **Sandbox** API urls:
 
@@ -113,7 +126,7 @@ Response
 ========
 **Tokens** have the following form:
 
-~~~ json
+{% highlight json %}
 {
   "access_token": "de050afe-a068-4374-ab40-430713f9763d", 
   "expires_in": 631138518, 
@@ -122,11 +135,11 @@ Response
   "scope": "/orcid-profile/read-limited", 
   "refresh_token": "1915d42b-4828-42be-b081-db0d27c85a03"
 }
-~~~
+{% endhighlight %}
 
 Users' profile data have the following form:
 
-~~~ json
+{% highlight json %}
 {
     "message-version": "1.1",
     "orcid-profile": {
@@ -158,7 +171,7 @@ Users' profile data have the following form:
                             "value": "http://neurostars.org/u/46/"
                         },
                         "url-name": {
-                            "value": "My profile at Neurostars"
+                            "value": "My profile at NeuroStars"
                         }
                     }
                 ],
@@ -293,7 +306,7 @@ Users' profile data have the following form:
         }
     }
 }
-~~~
+{% endhighlight %}
 
 
 Profile Data Reuse Policy
@@ -308,7 +321,8 @@ I, as a ORCID member, can specify the privacy settings for each piece of info in
 
 *Public API* can only read piece of info with *EVERYONE* setting, thus we of course have the right to read those data.
 
-Can we also reuse these data, by meaning f.i. displaying them in Neurostars?
+Can we also reuse these data, by meaning f.i. displaying them in NeuroStars?
+
 [This page](http://orcid.org/privacy-policy#Privacy_settings) states: *"The public will have free access to the [Public] data for viewing and use... Our Terms and Conditions of Use (for individuals) and our Membership Agreement (for Members) state that individual data Records may not be used in any manner that is defamatory or misleading; cannot be modified so as to make them false, incomplete, or misleading; are subject to your rights of publicity; and if any person or entity uses the data for marketing purposes, they must give you the right to opt-out of such communications. Although we post this notice, ORCID does not undertake the responsibility to police third party uses of data. If you object to a third-party use of your data, you should contact and make a complaint directly to the third party"*.
 
 So it seems that we can definitely reuse those data and they suggest us to respect some very reasonable [community norms](http://orcid.org/content/orcid-public-data-file-use-policy).
@@ -316,4 +330,4 @@ So it seems that we can definitely reuse those data and they suggest us to respe
 
 Conclusion
 ==========
-Using *Public API* we can build the social login and profiles data fetching features for ORCID users. We will first implement such features in [django-allauth](https://github.com/pennersr/django-allauth) and then we will integrate it in Neurostars.
+Using *Public API* we can build the social login and profiles data fetching features for ORCID users. We will first implement such features in [django-allauth](https://github.com/pennersr/django-allauth) and then we will integrate it in NeuroStars.

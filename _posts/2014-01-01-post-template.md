@@ -148,6 +148,7 @@ def foo(bar):
 class Ferrari(Car):
     def __init__(self, color):
         self.color = color
+        self.long_text = "Ut posuere nunc non nibh ornare, a ultrices libero maximus. Ut nunc ex, aliquet sit amet ornare vitae, elementum ut quam. Quisque accumsan vitae ligula quis viverra. Sed ullamcorper augue tincidunt eros aliquam, et volutpat lectus consequat."
 
     def start():
         self.on = True

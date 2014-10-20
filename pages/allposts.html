@@ -11,7 +11,9 @@ cssfile: "/assets/css/pages/allposts.css"
   {% if year == '2014' %}
     <article>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <time><i class="fa fa-calendar"></i> {{ post.date | date: '%d %B' }}</time>
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        <i class="fa fa-calendar"></i> {{ post.date | date: '%d %B' }}
+      </time>
     </article>
   {% endif %}
 {% endfor %}

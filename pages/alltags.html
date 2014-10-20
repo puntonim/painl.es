@@ -1,0 +1,26 @@
+---
+title:  "Tags"
+excerpt: "List of all tags"
+permalink: /tags/index.html
+cssfile: "/assets/css/pages/alltags.css"
+---
+
+<div class="tag-cloud">
+  <ul>
+    {% for tag in site.tags %}
+      <li><a href="#{{ tag[0] }}">{{ tag[0] }}<sup> {{ tag[1].size }}</sup></a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% for tag in site.tags %}
+  <h1 id="{{ tag[0] }}">{{ tag[0] }}<sup> {{ tag[1].size }}</sup></h1>
+  {% for post in tag[1] %}
+    <article>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+          <i class="fa fa-calendar"></i> {{ post.date | date: '%d/%m/%y' }}
+      </time>
+    </article>
+  {% endfor %}
+{% endfor %}

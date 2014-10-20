@@ -1,0 +1,53 @@
+@import pages/main
+
+div.content-container div.content
+  h1
+    color: $much-darker-gray-greenish-color
+    font-size: 1.5rem
+    margin-bottom: .5rem
+    text-shadow: none
+    letter-spacing: -0.1rem
+    clear: both
+    
+  article
+    clear: both
+    border-bottom: 1px dotted $gray-color
+    font-size: 1rem
+    line-height: 1
+    height: 1.2rem
+    margin-bottom: .5rem
+    div
+      float: left
+    a
+      //float: left
+      line-height: 1
+      font-size: 1rem
+      font-weight: 100
+      text-decoration: none
+      &:hover
+        color: $orange-yellow-color
+    time
+      float: right
+      line-height: 1
+
+  div.tag-cloud
+    margin-bottom: 3rem
+
+    ul
+      list-style: none
+    li
+      display: inline
+      list-style-type: none
+      background-color: $light-gray-color
+      padding: .1rem .2rem .1rem .2rem
+      $corner-radius: .4rem
+      -webkit-border-radius: $corner-radius
+      -moz-border-radius: $corner-radius
+      border-radius: $corner-radius
+      line-height: 1.9rem
+      white-space: nowrap
+
+    a
+      text-decoration: none
+      font-weight: 600
+      font-size: .8rem

@@ -30,12 +30,11 @@ aside
     display: block
   .description
     color: $whity-green
-  h1, .social-brief
+  h1
     font-family: "BritannicEF-Bold", serif
     font-weight: 900
     font-size: 4.5rem
     display: inline
-    white-space: nowrap
     @media (max-width: 1200px)
       font-size: 4.1rem
     @media (max-width: 1100px)
@@ -71,18 +70,34 @@ aside
     a
       text-decoration: none
 
-  .social-brief
-    display: none
-    padding-left: 7%
-    @media (max-width: 799px)
+  ul.name-and-social-brief
+    list-style-type: none
+    font-size: 3.3rem
+    h1
+      white-space: nowrap
+    li
       display: inline
-    @media (max-width: 359px)
-      padding-left: 2%
-
-    img
-      width: 2.5rem
-      vertical-align: middle
-      //margin-right: .58rem
+      img
+        width: 2.7rem
+        vertical-align: middle
+    li.social-icon
+      display: none
+      letter-spacing: -1rem
+      margin-left: 1.5%
+      margin-right: 1.5%
+      @media (max-width: 799px)
+        display: inline
+      @media (max-width: 400px)
+        margin-left: .5%
+        margin-right: .5%
+      @media (max-width: 359px)
+        margin: 0
+      &.first
+        margin-left: 6%
+        @media (max-width: 400px)
+          margin-left: 4%
+        @media (max-width: 359px)
+          margin-left: .5%
 
   a.rss
     float: right
@@ -220,18 +235,18 @@ aside .posts-and-projects-brief
       display: inline
 
 .envelop-tooltip-brief
+  letter-spacing: 0
   span
-    //margin-top: -1.82rem
-    top: -3.2rem
-    margin-left: -8.7rem
+    top: -3.4rem
+    margin-left: -8rem
     font-weight: 400
     font-size: 0.8rem
     font-family: "Open Sans", Helvetica, sans-serif
     &:before //The triangle
       content: ""
       position: absolute
-      right: 8%
-      top: 1.82rem
+      right: 6%
+      top: 1.8rem
       width: 0
       height: 0
       border-left: .59rem solid transparent

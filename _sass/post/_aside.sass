@@ -62,24 +62,23 @@ aside
     @media (max-width: 799px)
       display: none
   ul.social
-    &:before
-      content: ''
-      display: block
-    &:after
-      content: ''
-      display: table
-      clear: both
+    width: 200%
     li
-      float: left
-      margin: auto
+      display: inline
       img
         width: 3rem
         margin-right: .58rem
+    a
+      text-decoration: none
+
   .social-brief
     display: none
-    margin-left: 2rem
+    padding-left: 7%
     @media (max-width: 799px)
       display: inline
+    @media (max-width: 359px)
+      padding-left: 2%
+
     img
       width: 2.5rem
       vertical-align: middle
@@ -189,20 +188,24 @@ aside .posts-and-projects-brief
 
 .envelop-tooltip, .envelop-tooltip-brief
   outline: none
+  display: inline
+  color: $white-color
+  z-index: 10
   span
-    z-index: 10
     display: none
-    padding: .47rem .29rem
-    margin-top: -2.53rem
-    margin-left: 3.37rem
+    padding: .3rem .29rem .5rem
     line-height: .94rem
     border-radius: .35rem
+    margin-left: -.4rem
+    position: relative
+    top: -1.2rem
+    background: $green-dark-bg-color
     //box-shadow: 5px 5px 8px #CCC
     &:before //The triangle
       content: ""
       position: absolute
       right: 100%
-      top: .36rem
+      top: .5rem
       width: 0
       height: 0
       border-top: .59rem solid transparent
@@ -211,20 +214,16 @@ aside .posts-and-projects-brief
     a
       font-weight: 400
       font-size: .8rem
+      text-decoration: none
   &:hover
-    text-decoration: none
-    color: $white-color
     span
       display: inline
-      position: absolute
-      //border: 1px solid $green-dark-bg-color
-      background: $green-dark-bg-color
-      cursor: text
 
 .envelop-tooltip-brief
   span
-    margin-top: -1.82rem
-    margin-left: -7.8rem
+    //margin-top: -1.82rem
+    top: -3.2rem
+    margin-left: -8.7rem
     font-weight: 400
     font-size: 0.8rem
     font-family: "Open Sans", Helvetica, sans-serif

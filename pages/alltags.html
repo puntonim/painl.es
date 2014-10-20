@@ -5,16 +5,63 @@ permalink: /tags/index.html
 cssfile: "/assets/css/pages/alltags.css"
 ---
 
+{% comment %}
+The logic in this page is very complicated!
+The reason is that `site.tags` returns a list of tags with their related *POSTS*.
+*PAGES* are not included, but only posts. And I want to include also pages w/ category `projects`.
+In order to include project pages we have to use the complicated logic that follows.
+Note: using collections rather than categories is not convenient first 'cause atm collections
+are still experimental, plus there is no an actual benefit.
+{% endcomment %}
+
 <div class="tag-cloud">
   <ul>
+    <!-- Print all tags in all posts -->
     {% for tag in site.tags %}
-      <li><a href="#{{ tag[0] }}">{{ tag[0] }}<sup> {{ tag[1].size }}</sup></a></li>
+      <!-- Count how many posts and project pages have this tag -->
+      {% assign size = tag[1].size %}
+      {% for page in site.pages %}
+        {% if page.categories contains 'project' and page.tags contains tag[0] %}
+            {% assign size = size | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+      <li><a href="#{{ tag[0] }}">{{ tag[0] }}<sup> {{ size }}</sup></a></li>
+    {% endfor %}
+
+    <!-- Print all tags in all `project` pages, but only those tags not included in any post -->
+    {% for page in site.pages %}
+      {% if page.categories contains 'project' %}
+        {% for tag in page.tags %}
+          {% unless site.tags contains tag %}
+            <li><a href="#{{ tag }}">{{ tag }}<sup> 1</sup></a></li>
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
 
+<!-- Print the list of posts for each tag in posts -->
 {% for tag in site.tags %}
-  <h1 id="{{ tag[0] }}">{{ tag[0] }}<sup> {{ tag[1].size }}</sup></h1>
+  <!-- Count how many posts and project pages have this tag -->
+  {% assign size = tag[1].size %}
+  {% for page in site.pages %}
+    {% if page.categories contains 'project' and page.tags contains tag[0] %}
+        {% assign size = size | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  <h1 id="{{ tag[0] }}">{{ tag[0] }}<sup> {{ size }}</sup></h1>
+
+  <!-- Project pages -->
+  {% for page in site.pages %}
+    {% if page.categories contains 'project' and page.tags contains tag[0] %}
+      <article>
+        <a href="{{ site.baseurl }}{{ page.url }}"><strong>Project:</strong> {{ page.title }}</a>
+      </article>
+    {% endif %}
+  {% endfor %}
+
+  <!-- Posts -->
   {% for post in tag[1] %}
     <article>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
@@ -23,4 +70,26 @@ cssfile: "/assets/css/pages/alltags.css"
       </time>
     </article>
   {% endfor %}
+{% endfor %}
+
+<!-- Print the list of project pages for each tag in project pages, but only those tags not included in any posts -->
+{% for page in site.pages %}
+  {% if page.categories contains 'project' %}
+    {% for tag in page.tags %}
+      {% unless site.tags contains tag %}
+
+        <h1 id="{{ tag }}">{{ tag }}<sup> 1</sup></h1>
+
+        <!-- Project pages -->
+        {% for pg in site.pages %}
+          {% if pg.categories contains 'project' and pg.tags contains tag %}
+            <article>
+              <a href="{{ site.baseurl }}{{ pg.url }}"><strong>Project:</strong> {{ pg.title }}</a>
+            </article>
+          {% endif %}
+        {% endfor %}
+
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
 {% endfor %}

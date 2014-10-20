@@ -11,7 +11,7 @@ excerpt: "This is a sample post to test many features and styles with the curren
 #permalink: "/foo/bar/index.html"
 # The date (system default: taken from the file name)
 #date: 2014-10-06 15:57:07
-# To pretend this post is inside folders like: /foo/bar/year/month/day/title.html
+# To assign a category or to pretend this post is inside folders like: /foo/bar/year/month/day/title.html
 #categories: [foo, bar]
 # Published status: false to hide the post (system default: true)
 published: false

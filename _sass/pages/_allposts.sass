@@ -3,24 +3,27 @@
 div.content-container div.content
   h1
     color: $much-darker-gray-greenish-color
-    
-  article
-    clear: both
-    border-bottom: 1px dotted $gray-color
+
+  .table
+    display: table
+    width: 100%
     font-size: 1rem
-    line-height: 1
-    height: 1.2rem
-    margin-bottom: .5rem
-    div
-      float: left
     a
-      //float: left
       line-height: 1
       font-size: 1rem
       font-weight: 100
       text-decoration: none
       &:hover
         color: $orange-yellow-color
-    time
-      float: right
-      line-height: 1
+  .row
+    display: table-row
+  .column1, .column2
+    display: table-column
+  .column2
+    width: 30%
+  .cell
+    display: table-cell
+    border-bottom: 1px dotted $gray-color
+    vertical-align: middle
+  .right
+    text-align: right

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "RESTful Webservice for NeuroStars"
+title: "NeuroStars RESTful Webservice"
 excerpt: "Building a RESTful Webservice for NeuroStars"
 tags: [gsoc, neurostars, biostar, rest, webservice, api, django rest framework]
 published: false
@@ -13,3 +13,5 @@ TODO
 [GSoC2014]({% post_url 2014-04-21-gsoc2014 %})
 
 In a [previous post]({% post_url 2014-05-13-restful-webservice-sketch %})...
+
+poi aggiungere il link a qs pagina nell apgina del progetto di neurostars

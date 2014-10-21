@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "NeuroStars RESTful Webservice Sketch"
-excerpt: "RESTful Webservice"
+excerpt: "Designing a RESTful Webservice for NeuroStars"
 tags: [gsoc, neurostars, biostar, rest, webservice, api]
 ---
 

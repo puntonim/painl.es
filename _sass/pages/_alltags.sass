@@ -9,27 +9,6 @@ div.content-container div.content
     letter-spacing: -0.1rem
     clear: both
     
-  article
-    clear: both
-    border-bottom: 1px dotted $gray-color
-    font-size: 1rem
-    line-height: 1
-    height: 1.2rem
-    margin-bottom: .5rem
-    div
-      float: left
-    a
-      //float: left
-      line-height: 1
-      font-size: 1rem
-      font-weight: 100
-      text-decoration: none
-      &:hover
-        color: $orange-yellow-color
-    time
-      float: right
-      line-height: 1
-
   div.tag-cloud
     margin-bottom: 3rem
 
@@ -51,3 +30,27 @@ div.content-container div.content
       text-decoration: none
       font-weight: 600
       font-size: .8rem
+
+  .table
+    display: table
+    width: 100%
+    font-size: 1rem
+    a
+      line-height: 1
+      font-size: 1rem
+      font-weight: 100
+      text-decoration: none
+      &:hover
+        color: $orange-yellow-color
+  .row
+    display: table-row
+  .column1, .column2
+    display: table-column
+  .column2
+    width: 30%
+  .cell
+    display: table-cell
+    border-bottom: 1px dotted $gray-color
+    vertical-align: middle
+  .right
+    text-align: right

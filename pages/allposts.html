@@ -13,14 +13,14 @@ cssfile: "/assets/css/pages/allposts.css"
     {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
     {% if year == '2014' %}
       <div class="row">
-          <div class="cell">
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          </div>
-          <div class="cell right">
-            <time datetime="{{ post.date | date_to_xmlschema }}">
-              <i class="fa fa-calendar"></i> {{ post.date | date: '%d %B' }}
-            </time>
-          </div>
+        <div class="cell">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <div class="cell right">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            <i class="fa fa-calendar"></i> {{ post.date | date: '%d %B' }}
+          </time>
+        </div>
       </div>
     {% endif %}
   {% endfor %}

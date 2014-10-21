@@ -52,24 +52,35 @@ are still experimental, plus there is no an actual benefit.
   {% endfor %}
   <h1 id="{{ tag[0] }}">{{ tag[0] }}<sup> {{ size }}</sup></h1>
 
-  <!-- Project pages -->
-  {% for page in site.pages %}
-    {% if page.categories contains 'project' and page.tags contains tag[0] %}
-      <article>
-        <a href="{{ site.baseurl }}{{ page.url }}"><strong>Project:</strong> {{ page.title }}</a>
-      </article>
-    {% endif %}
-  {% endfor %}
+  <div class="table">
+    <div class="column1"></div>
+    <div class="column2"></div>
+    <!-- Project pages -->
+    {% for page in site.pages %}
+      {% if page.categories contains 'project' and page.tags contains tag[0] %}
+        <div class="row">
+          <div class="cell">
+            <a href="{{ site.baseurl }}{{ page.url }}"><strong>Project:</strong> {{ page.title }}</a>
+          </div>
+          <div class="cell right"></div>
+        </div>
+      {% endif %}
+    {% endfor %}
 
-  <!-- Posts -->
-  {% for post in tag[1] %}
-    <article>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <time datetime="{{ post.date | date_to_xmlschema }}">
-          <i class="fa fa-calendar"></i> {{ post.date | date: '%d/%m/%y' }}
-      </time>
-    </article>
-  {% endfor %}
+    <!-- Posts -->
+    {% for post in tag[1] %}
+      <div class="row">
+        <div class="cell">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </div>
+        <div class="cell right">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            <i class="fa fa-calendar"></i> {{ post.date | date: '%d/%m/%y' }}
+          </time>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 {% endfor %}
 
 <!-- Print the list of project pages for each tag in project pages, but only those tags not included in any posts -->
@@ -80,15 +91,19 @@ are still experimental, plus there is no an actual benefit.
 
         <h1 id="{{ tag }}">{{ tag }}<sup> 1</sup></h1>
 
-        <!-- Project pages -->
-        {% for pg in site.pages %}
-          {% if pg.categories contains 'project' and pg.tags contains tag %}
-            <article>
-              <a href="{{ site.baseurl }}{{ pg.url }}"><strong>Project:</strong> {{ pg.title }}</a>
-            </article>
-          {% endif %}
-        {% endfor %}
-
+        <div class="table">
+          <div class="column1"></div>
+          <!-- Project pages -->
+          {% for pg in site.pages %}
+            {% if pg.categories contains 'project' and pg.tags contains tag %}
+              <div class="row">
+                <div class="cell">
+                  <a href="{{ site.baseurl }}{{ pg.url }}"><strong>Project:</strong> {{ pg.title }}</a>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
       {% endunless %}
     {% endfor %}
   {% endif %}

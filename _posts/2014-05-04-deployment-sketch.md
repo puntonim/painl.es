@@ -7,7 +7,7 @@ tags: [gsoc, neurostars, biostar, deployment, vagrant, docker]
 
 One of my first activities for
 [NeuroStars]({{ site.baseurl }}/neurostars/) during
-[GSoC2014](https://developers.google.com/open-source/soc/?csw=1) will be improving the deployment
+[GSoC2014]({% post_url 2014-04-21-gsoc2014 %}) will be improving the deployment
 strategy. I have been working on it for a week end and produced a sketch.
 There is still a lot to do, so this is nothing more than a starting point.
 

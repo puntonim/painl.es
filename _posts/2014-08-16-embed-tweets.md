@@ -9,7 +9,7 @@ tags: [gsoc, neurostars, biostar, tweet, embed]
 provide a cool feature related to post editing: users can easily add links to other *posts*
 and *users* and embed snippets of code from *Gist* and videos from *YouTube*.
 
-Today, during my [GSoC2014](https://developers.google.com/open-source/soc/?csw=1), I
+Today, during my [GSoC2014]({% post_url 2014-04-21-gsoc2014 %}), I
 implemented the support for tweets from *Twitter*. This feature will be soon deployed to live.
 
 Some screenshot from our preview website:

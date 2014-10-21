@@ -27,6 +27,10 @@ published: false
 #ogimage: "/assets/img/site-logos/7.png"
 ---
 
+<div class="initial-note">
+This post is a template and this is an initial note
+</div>
+
 Biostar and NeuroStars provide a cool feature related to post editing: users can easily add links to other *italic* and *users* and embed snippets of code from **Bold** and videos from *YouTube*. Lorem ipsum dolor sit amet, [consectetur](http://io.com) **consectetur** *consectetur* adipiscing elit. Nulla rhoncus nec ipsum non pulvinar. Suspendisse facilisis eros ac ante dignissim, nec dictum purus dictum. Donec sed sollicitudin enim. Etiam in ultricies elit.
 
 Cras lacinia rutrum nisl, convallis pharetra eros vulputate vitae. Donec fermentum metus a orci condimentum pharetra. Sed sit amet pharetra est, non posuere erat. Morbi venenatis eget eros in semper.

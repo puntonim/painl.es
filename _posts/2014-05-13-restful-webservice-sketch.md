@@ -7,7 +7,7 @@ tags: [gsoc, neurostars, biostar, rest, webservice, api]
 
 Building a [RESTful Webservice](http://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services)
 will probably be my first activity for [NeuroStars]({{ site.baseurl }}/neurostars/) during
-[GSoC2014](https://developers.google.com/open-source/soc/?csw=1): 
+[GSoC2014]({% post_url 2014-04-21-gsoc2014 %}): 
 it is a good opportunity for me to get an overview of the codebase.
 
 Some work have already been done in

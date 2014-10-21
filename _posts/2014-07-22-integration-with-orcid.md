@@ -9,7 +9,7 @@ tags: [gsoc, neurostars, biostar, orcid, api, oauth, django-allauth]
 
 We would like to integrate [ORCID](http://orcid.org/) in
 [NeuroStars]({{ site.baseurl }}/neurostars/) during
-[GSoC2014](https://developers.google.com/open-source/soc/?csw=1), providing two new features:
+[GSoC2014]({% post_url 2014-04-21-gsoc2014 %}), providing two new features:
 
 - Signup/login using a ORCID account (via OAuth);
 - Import data from a ORCID profile to a NeuroStars profile.

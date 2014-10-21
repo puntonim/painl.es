@@ -6,7 +6,7 @@ tags: [gsoc, neurostars, biostar, feedback, usability, community]
 ---
 
 [NeuroStars]({{ site.baseurl }}/neurostars/), the project I am working on for
-[GSoC2014](https://developers.google.com/open-source/soc/?csw=1), is powered by
+[GSoC2014]({% post_url 2014-04-21-gsoc2014 %}), is powered by
 [BioStar](https://github.com/ialbert/biostar-central).
 
 *BioStar* is a simple, generic, flexible and extensible Q&A framework, written in Python and

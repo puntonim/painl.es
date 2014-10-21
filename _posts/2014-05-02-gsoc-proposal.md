@@ -6,7 +6,7 @@ tags: [gsoc, proposal, neurostars]
 ---
 
 I will take part in
-[Google Summer of Code 2014](https://developers.google.com/open-source/soc/?csw=1)!!
+[Google Summer of Code 2014]({% post_url 2014-04-21-gsoc2014 %})!!
 I submitted a
 [proposal](https://docs.google.com/document/d/1yBkXf29MP_Hjc7G7Ayd30iL6z7-1aLA53j7ezLQuPXk/edit?usp=sharing)
 for the [NeuroStars]({{ site.baseurl }}/neurostars/) project and I got selected!

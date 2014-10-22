@@ -6,7 +6,7 @@ cssfile: "/assets/css/pages/allprojects.css"
 ---
 
 
-The following is a selection of bla bla This is an amaz ing project that is an ama zing project that is an am azing project that is an a m a zing pro ject that is an ama zing project that is an am azing project that is an ama zing p r o ject that is an ama zing project that is an ama
+The following is a selection of the most recent and fun projects I worked on.
 
 [Moogle]({{ site.baseurl }}/moogle/)
 ========
@@ -42,7 +42,7 @@ Available for pulling from
 [Docker Registry](https://registry.hub.docker.com/u/nimiq/postgresql93/)...
 <a href="{{ site.baseurl }}/docker-postgresql/"><i class="fa fa-chevron-circle-right"></i></a>
 
-[Ansible-Biostar]({{ site.baseurl }}/ansible-biostar/")
+[Ansible-Biostar]({{ site.baseurl }}/ansible-biostar/)
 =================
 <a href="{{ site.baseurl }}/ansible-biostar/"><img src="{{ site.baseurl }}/assets/img/projects/ansible-g.png" alt="Ansible-Biostar icon"></a>
 An [Ansible](http://www.ansible.com/) playbook to automatize the deployment of

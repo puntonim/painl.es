@@ -35,9 +35,15 @@ of this project...
 [Docker-PostgreSQL]({{ site.baseurl }}/docker-postgresql/)
 ===================
 <a href="{{ site.baseurl }}/docker-postgresql/"><img src="{{ site.baseurl }}/assets/img/projects/docker-g.png" alt="Docker-PostgreSQL icon"></a>
-This is an amaz ing project that is an ama zing project that is an am azing project that is an ama zing pro ject that is an ama zing project that is an am azing project that is an ama zing pro ject that is an ama zing project that is an amaz ing proj ect that is an ama zing pro ject that is an ama zing pro ject that is an ama zing project that... <a href="{{ site.baseurl }}/docker-postgresql/"><i class="fa fa-chevron-circle-right"></i></a>
+A [Docker](https://www.docker.com/) container for [PostgreSQL](http://www.postgresql.org/)
+with *special features* like 
+an integrated *SSH server* and the automatic sharing of *PostgreSQL's data directory* and *log files*.
+Available for pulling from the
+[Docker Registry](https://registry.hub.docker.com/u/nimiq/postgresql93/)...
+<a href="{{ site.baseurl }}/docker-postgresql/"><i class="fa fa-chevron-circle-right"></i></a>
 
 [Ansible-Biostar]({{ site.baseurl }}/ansible-biostar/")
 =================
 <a href="{{ site.baseurl }}/ansible-biostar/"><img src="{{ site.baseurl }}/assets/img/projects/ansible-g.png" alt="Ansible-Biostar icon"></a>
-This is an amaz ing project that is an ama zing project that is an am azing project that is an ama zing pro ject that is an ama zing project that is an am azing project that is an ama zing pro ject that is an ama zing project that is an amaz ing proj ect that is an ama zing pro ject that is an ama zing pro ject that is an ama zing project that... <a href="{{ site.baseurl }}/ansible-biostar/"><i class="fa fa-chevron-circle-right"></i></a>
+This is an amaz ing project that is an ama zing project that is an am azing project that is an ama zing pro ject that is an ama zing project that is an am azing project that is an ama zing pro ject that is an ama zing project that is an amaz ing proj ect that is an ama zing pro ject that is an ama zing pro ject that is an ama zing project that...
+<a href="{{ site.baseurl }}/ansible-biostar/"><i class="fa fa-chevron-circle-right"></i></a>

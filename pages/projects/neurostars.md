@@ -91,7 +91,8 @@ Most of my contributions happened during the [Google Summer of Code]({% post_url
 
 List of my main contributions:
 
-- [Ansible-Biostar]({{ site.baseurl }}/ansible-biostar/) playbook to automatize the deployment;
+- [Ansible-Biostar]({{ site.baseurl }}/ansible-biostar/) playbook to automatize the deployment
+inside [Docker](https://www.docker.com/) containers;
 - designed a [basic RESTful webservice]({% post_url 2014-05-13-restful-webservice-sketch %});
 currently [working on a more feature-rich version](https://github.com/nimiq/biostar-central/commits/api)
 based on [Django REST Framework](http://www.django-rest-framework.org/);

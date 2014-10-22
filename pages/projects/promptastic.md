@@ -10,8 +10,9 @@ ogimage: "/assets/img/projects/promptastic-g.png"
 ---
 
 <div class="initial-note">
-<strong>TL;DR</strong> I am the author of 
-<a href="https://github.com/nimiq/promptastic">Promptastic</a>.
+<strong>TL;DR</strong> I am the author of Promptastic. Promptastic is
+<a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source</a> and
+<a href="https://github.com/nimiq/promptastic">hosted on GitHub</a>.
 </div>
 
 *Promptastic* is a flavored *prompt* for [Bash shell](http://en.wikipedia.org/wiki/Bash_(Unix_shell))

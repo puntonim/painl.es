@@ -9,6 +9,14 @@ cssfile: "/assets/css/pages/projects/neurostars.css"
 ogimage: "/assets/img/projects/neurostars-g.png"
 ---
 
+<div class="initial-note">
+<strong>TL;DR</strong> I am one of the
+<a href="https://github.com/ialbert/biostar-central/commits?author=nimiq">main contributors</a>
+of <a href="https://github.com/ialbert/biostar-central">BioStar</a>, the engine which powers
+<a href="http://neurostars.org/">NeuroStars</a>. I am also one of the two system administrators
+of <a href="http://neurostars.org/">neurostars.org</a>.
+</div>
+
 [NeuroStars](http://neurostars.org/) is a question-and-answer website for the
 *neuroinformatics* community. 
 
@@ -95,3 +103,8 @@ feature implemented by [extending Django-allauth]({% post_url 2014-08-07-django-
 - currently [working on continuous delivery](https://github.com/nimiq/biostar-central/commit/1771aa8614d82a3faf9467c9c1c60cd62555af05) based on GitHub Webhooks.
 
 
+Codebase
+========
+- *NeuroStars* repository: <https://github.com/INCF/biostar-central>
+- *BioStar* repository: <https://github.com/ialbert/biostar-central>
+- My forked repository, deployed to [neurostars.org](http://neurostars.org/): <https://github.com/nimiq/biostar-central>

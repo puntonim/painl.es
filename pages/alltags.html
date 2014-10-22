@@ -60,7 +60,7 @@ are still experimental, plus there is no an actual benefit.
       {% if page.categories contains 'project' and page.tags contains tag[0] %}
         <div class="row">
           <div class="cell">
-            <a href="{{ site.baseurl }}{{ page.url }}"><strong>Project:</strong> {{ page.title }}</a>
+            <a href="{{ site.baseurl }}{{ page.url | remove: 'index.html' }}"><strong>Project:</strong> {{ page.title }}</a>
           </div>
           <div class="cell right"></div>
         </div>
@@ -98,7 +98,7 @@ are still experimental, plus there is no an actual benefit.
             {% if pg.categories contains 'project' and pg.tags contains tag %}
               <div class="row">
                 <div class="cell">
-                  <a href="{{ site.baseurl }}{{ pg.url }}"><strong>Project:</strong> {{ pg.title }}</a>
+                  <a href="{{ site.baseurl }}{{ pg.url | remove: 'index.html' }}"><strong>Project:</strong> {{ pg.title }}</a>
                 </div>
               </div>
             {% endif %}

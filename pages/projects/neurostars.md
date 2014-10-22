@@ -78,7 +78,7 @@ using Docker containers;
 - [Docker](https://www.docker.com/): to deploy applications inside software containers;
 - my [Docker-PostgreSQL]({{ site.baseurl }}/docker-postgresql/) container which deploys
 [PostgreSQL9.3](http://www.postgresql.org/) inside a Docker container;
-- [Nginx](http://nginx.org/) as reverse proxy;
+- [Nginx](http://nginx.org/) as reverse proxy server;
 - [Waitress](http://waitress.readthedocs.org/en/latest/): the webserver;
 - [Postfix](http://www.postfix.org/) as email server.
 

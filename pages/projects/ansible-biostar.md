@@ -2,14 +2,45 @@
 categories: [project]
 title:  "Ansible-Biostar"
 tags: [biostar, ansible]
-excerpt: "Ansible-Biostar: ...................."
+excerpt: "Ansible-Biostar: Ansible playbook to automatize the deployment of BioStar-based projects using Docker containers"
 permalink: /ansible-biostar/index.html
 comments: true
 cssfile: "/assets/css/pages/projects/ansible-biostar.css"
 ogimage: "/assets/img/projects/ansible-g.png"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et velit id diam interdum aliquam. Nam at dui egestas, dapibus eros non, condimentum libero. Nullam eu volutpat justo, non mattis mi. Aliquam erat volutpat. Duis vitae porta quam. Sed egestas lacinia hendrerit. Fusce placerat venenatis urna sed efficitur. In sed bibendum elit. Sed nisl risus, bibendum et dignissim eu, maximus eget purus. Cras at lacus ut magna posuere pretium ac eu quam. Aenean risus nulla, luctus ac turpis a, molestie accumsan lorem. Mauris ultricies facilisis tortor, aliquet semper libero viverra in. Integer vulputate nulla diam, sit amet tincidunt urna fermentum id.
+<div class="initial-note">
+<strong>TL;DR</strong> I am the author of Ansible-Biostar.
+Ansible-Biostar is
+<a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source</a>, 
+<a href="https://github.com/nimiq/ansible-biostar">hosted on GitHub</a> and
+available in <a href="https://galaxy.ansible.com/list#/roles/1057">Ansible Galaxy</a>.
+</div>
 
-Sed porttitor pulvinar nisi, a cursus lectus vehicula sit amet. Aliquam et dapibus nulla, id molestie enim. Nam fermentum dolor euismod dolor facilisis porttitor. Etiam ac lacus et velit scelerisque elementum bibendum in felis. Nunc malesuada tincidunt consequat. Proin finibus id ipsum in dictum. Maecenas vel pellentesque urna, et posuere ligula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hendrerit odio nec arcu egestas, non pharetra metus iaculis. Curabitur feugiat, nulla a malesuada accumsan, erat justo lacinia nisi, eget dignissim risus ipsum id velit. Integer vehicula dui nibh, nec gravida justo venenatis ut. Sed ullamcorper magna id lectus aliquet ornare. Mauris quis dui rhoncus, luctus felis sit amet, faucibus nunc. Suspendisse egestas a nunc at iaculis. Cras luctus tellus urna, iaculis interdum elit euismod eu. Curabitur viverra lacinia pretium.
+An [Ansible](http://www.ansible.com/) playbook to automatize the deployment of
+[BioStar](https://github.com/ialbert/biostar-central/) based projects
+using [Docker](https://www.docker.com/) containers.
 
+<img src="{{ site.baseurl }}/assets/img/projects/ansible-g.png" alt="Ansible-Biostar icon" class="right">
+
+*Ansible-Biostar* can currently deploy to [Amazon Elastic Compute Cloud](http://aws.amazon.com/ec2/)
+and [Google Compute Engine](https://cloud.google.com/compute/) - still experimental! - machines.
+It is the main tool used to deploy
+[NeuroStars]({{ site.baseurl }}/neurostars/)
+and other [BioStar](https://github.com/ialbert/biostar-central/) based projects.
+
+Features
+========
+- Deploy to [Amazon Elastic Compute Cloud](http://aws.amazon.com/ec2/)
+and [Google Compute Engine](https://cloud.google.com/compute/) - still experimental!
+- Configure the *virtual firewall* via [Amazon EC2 Security Groups](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html)
+- Add your *public key* to the new machine's SSH server for an easy access
+- Ship a [PostgreSQL 9.3 server inside a Docker container]({{ site.baseurl }}/docker-postgresql/)
+- Ship a [BioStar](https://github.com/ialbert/biostar-central/) based website with
+[Nginx](http://nginx.org/) as reverse proxy server, 
+[Waitress](http://waitress.readthedocs.org/en/latest/) as webserver
+- Easy to [configure](https://github.com/nimiq/ansible-biostar/blob/master/README.md)
+- Available in [Ansible Galaxy](https://galaxy.ansible.com/list#/roles/1057)
+
+Find more info in the codebase 
+[hosted at GitHub](https://github.com/nimiq/ansible-biostar)!

@@ -14,11 +14,11 @@ ogimage: "/assets/img/projects/docker-g.png"
 Docker-PostgreSQL is
 <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source</a>, 
 <a href="https://github.com/nimiq/docker-postgresql93">hosted on GitHub</a> and
-available in the <a href="https://registry.hub.docker.com/u/nimiq/postgresql93/">Docker Registry</a>.
+available in <a href="https://registry.hub.docker.com/u/nimiq/postgresql93/">Docker Registry</a>.
 </div>
 
 A [Docker](https://www.docker.com/) container for [PostgreSQL](http://www.postgresql.org/)
-with *special features*. Available for pulling from the
+with *special features*. Available for pulling from
 [Docker Registry](https://registry.hub.docker.com/u/nimiq/postgresql93/).
 
 <img src="{{ site.baseurl }}/assets/img/projects/docker-g.png" alt="Docker-PostgreSQL icon" class="right">
@@ -41,7 +41,7 @@ a container has many strange corner cases that are hard to get right if you are 
 familiar with the Unix system model. This can cause a lot of strange problems. Baseimage-docker
 gets everything right*".
 
-[Docker-PostgreSQL](https://registry.hub.docker.com/u/nimiq/postgresql93/)
+[Docker-PostgreSQL](https://github.com/nimiq/docker-postgresql93)
 ships a full [PostgreSQL 9.3](http://www.postgresql.org/) server inside a *Docker container*
 using *baseimage-docker*. All you have to do is pulling
 [Docker-PostgreSQL from the registry](https://registry.hub.docker.com/u/nimiq/postgresql93/)
@@ -62,6 +62,7 @@ Features
 - Add your *public key* to the container's SSH server for an easy access
 - Expose to the host the *ports* 22 (SSH) and 5432 (PostgreSQL)
 - Share PostgreSQL *data directory* and *log files* with the host and other Docker containers
+- Available in [Docker Registry](https://registry.hub.docker.com/u/nimiq/postgresql93)
 
-For more info see the codebase 
-[hosted at GitHub](https://github.com/nimiq/docker-postgresql93/).
+Find more info in the codebase 
+[hosted at GitHub](https://github.com/nimiq/docker-postgresql93/)!

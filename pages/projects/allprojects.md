@@ -12,7 +12,14 @@ I also made [minor contributions]({{ site.baseurl }}/about/#foss-contributions) 
 [Moogle]({{ site.baseurl }}/moogle/)
 ========
 <a href="{{ site.baseurl }}/moogle/"><img src="{{ site.baseurl }}/assets/img/projects/moogle-g.png" alt="Moogle icon"></a>
-This is an amaz ing project that is an ama zing project that is an am azing project that is an a m a zing pro ject that is an ama zing project that is an am azing project that is an ama zing p r o ject that is an ama zing project that is an amaz ing proj ect that is an ama zing pro ject that is an ama zing pro ject that is an ama zing project that... <a href="{{ site.baseurl }}/moogle/"><i class="fa fa-chevron-circle-right"></i></a>
+*You are searching for the sushi restaurant that a friend of yours recommended last month:
+you type "sushi restaurant" in your smart phone and you get a tweet from John talking about
+Tokyo Sushi. You also get a comment you wrote on Facebook, an SMS message sent to 
+your brother and a bookmark in your browser, all about the same restaurant.
+Now imagine that you can do this with your smart phone, laptop, tablet or smart TV.
+Something so basic yet so far from the reality.*
+This is **Moogle - My Own Google**, the search engine for private data.
+<a href="{{ site.baseurl }}/moogle/"><i class="fa fa-chevron-circle-right"></i></a>
 
 [Promptastic]({{ site.baseurl }}/promptastic/)
 =============

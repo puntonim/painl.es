@@ -45,7 +45,9 @@ and administered by [Roman](https://github.com/brainstorm).
 *BioStar* is authored by [Istvan](https://github.com/ialbert) and 
 [I am one of the main contributors](https://github.com/ialbert/biostar-central/commits?author=nimiq).
 
-Check out a [video tutorial](https://www.youtube.com/watch?v=veVD1olyaW4).
+Check out a [webinar](https://www.youtube.com/watch?v=veVD1olyaW4) by
+[Dr. Satrajit Ghosh](https://github.com/satra)
+from the Massachusetts Institute of Technology.
 
 Technologies
 ============

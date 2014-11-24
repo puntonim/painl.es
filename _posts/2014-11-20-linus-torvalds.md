@@ -33,5 +33,6 @@ And that is how he replied: "Experience is somehow overrated..."
 Norvig, Director of Research at Google, made fun of books like "Teach Yourself C++ in 10 Days".
 He said it takes 10 years to deeply understand a programming language: in ten days or a month
 or six months a Java developer f.i. could only learn C++ syntax and write Java-like code with C++ syntax.
+
 So, learning a programming language is [a long process](http://www.norvig.com/21-days.html)...
 you'd better start early!

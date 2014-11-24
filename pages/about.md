@@ -37,7 +37,7 @@ Work
 ====
 
 ## [Eutron](http://www.eutron.it/)
-I started out as *Research Intern* in the field of *usability of security devices*
+While in university, during the final year of my Bachelor, I worked as *IT Security Engineer Intern* in the field of *usability of security devices*
 at [Eutron](http://www.eutron.it/) in Italy.
 During this time I got the opportunity to co–author
 the book "[Security and Usability](http://books.google.com/books?id=wDVhy9EyEAEC&lpg=PP1&pg=PA221#v=onepage&q&f=false)", published by O'Reilly Media, together with some highly regarded professors:
@@ -46,28 +46,27 @@ the book "[Security and Usability](http://books.google.com/books?id=wDVhy9EyEAEC
 [P. Salvaneschi](http://www.unibg.it/struttura/struttura.asp?cerca=rubrica&rubrica=1&persona=1091&nome=Paolo&cognome=Salvaneschi&titolo=Prof.) and
 [U. Piazzalunga](https://www.linkedin.com/profile/view?id=49766601&authType=NAME_SEARCH&authToken=jGyK&locale=en_US&srchid=2869284821413996825098&srchindex=1&srchtotal=2&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A2869284821413996825098%2CVSRPtargetId%3A49766601%2CVSRPcmpt%3Aprimary).
 
-[Eutron](http://www.eutron.it/) is a mid-size company which provides electronic manufacturing services
-and produce security system devices.
+[Eutron](http://www.eutron.it/) is an electronic manufacturing services (EMS) enterprise.
 
 
 ## Salvaneschi & Partners
-Six months later I joined *Salvaneschi & Partners* as *Quality Assurance Engineer* for 5 and half years.
-I was responsible to monitor every phase of the software development process so as to ensure
+During my Master I joined *Salvaneschi & Partners* as *Quality Assurance Engineer*.
+I was responsible for monitoring every phase of the software development process so as to ensure
 design quality, making sure that the software adheres to the standards and requirements agreed
 with stakeholders.
 
-*Salvaneschi & Partners* is a tiny group of knowledgeable professionals offering
-auditing and consulting services to IT companies.
+*Salvaneschi & Partners* is small-sized software engineering company made of a group of
+knowledgeable professionals offering auditing and consulting services to IT companies.
 
 
 ## [United Academics](http://www.united-academics.org/)
-In 2010 I entered United Academics as web developer and soon became the IT team leader.
+In 2010 I entered United Academics as web developer and soon became the *Lead Software Developer*.
 I worked there for 4 years and built a scraper and full-text search engine for Open Access papers,
 a [printing on demand website and web service](http://www.print2book.com/), a job vacancy portal
 and an online bookshop.
 
-[United Academics](http://www.united-academics.org/) is a start-up in the field of
-electronic publishing.
+[United Academics](http://www.united-academics.org/) is an international start-up which promotes
+Open Access publishing amongst researchers.
 
 
 ## [Google Summer of Code]({% post_url 2014-04-21-gsoc2014 %})

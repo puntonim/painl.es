@@ -13,34 +13,34 @@ Google [GSoC participant]({% post_url 2014-04-21-gsoc2014 %}).
 Digital privacy paranoid.
 Co–author of "[Security and Usability](http://books.google.com/books?id=wDVhy9EyEAEC&lpg=PP1&pg=PA221#v=onepage&q&f=false)", published by O'Reilly Media.
 
-I have a [profile on LinkedIn](http://www.linkedin.com/in/pcoffetti) and [GitHub](https://github.com/nimiq/).
+<i class="fa fa-caret-right fa-2x" style="vertical-align: middle;"></i> More about my professional experience and expertise in my [LinkedIn](http://www.linkedin.com/in/pcoffetti) and [GitHub](https://github.com/nimiq) profiles.
 
 Bio
 ===
-I grew up in *Italy*. After attending [one of the best science high schools](http://www.liceolussana.com)
-in my town, I attended *software engineering* at [University of Bergamo](http://www.unibg.it/).
+I grew up in *Italy*. After one of the best [science high schools](http://www.liceolussana.com)
+in town, I attended *Computer Engineering* at [University of Bergamo](http://www.unibg.it/).
 I graduated with *top marks* and YES, *I am very proud of it*!
 
 I lived in *Prague, Czech Republic* for a year during my [Erasmus Programme](http://en.wikipedia.org/wiki/Erasmus_Programme)
 and loved their original [Pilsner](http://en.wikipedia.org/wiki/Pilsner_Urquell)
 and [Svickova](http://en.wikipedia.org/wiki/Sv%C3%AD%C4%8Dkov%C3%A1).
 
-In 2013 I spent wonderful months in Washington, DC, USA
+In 2013 I spent wonderful months in *Washington, DC, USA*
 while attending [SPRINT](http://www.advanse.com/training/sprint-faqs/)
 a summer program in international business.
 
 I am currently based in *Amsterdam, the Netherlands* where I learned to love bikes,
-sliced bread and... rain!
+sliced bread and, after a few years, even... the rain!
 
 
 Work
 ====
 
 ## [Eutron](http://www.eutron.it/)
-While in university, during the final year of my Bachelor, I worked as *IT Security Engineer Intern* in the field of *usability of security devices*
+While in university, during the final year of bachelor's studies, I worked as *IT Security Engineer Intern* in the field of *usability of security devices*
 at [Eutron](http://www.eutron.it/) in Italy.
-During this time I got the opportunity to co–author
-the book "[Security and Usability](http://books.google.com/books?id=wDVhy9EyEAEC&lpg=PP1&pg=PA221#v=onepage&q&f=false)", published by O'Reilly Media, together with some highly regarded professors:
+There I got the opportunity to co–author
+the book "[Security and Usability](http://books.google.com/books?id=wDVhy9EyEAEC&lpg=PP1&pg=PA221#v=onepage&q&f=false)", published by O'Reilly Media and written together with some highly regarded professors and professionals:
 [S. Garfinkel](http://en.wikipedia.org/wiki/Simson_Garfinkel),
 [L. Cranor](https://www.cylab.cmu.edu/education/faculty/cranor.html),
 [P. Salvaneschi](http://www.unibg.it/struttura/struttura.asp?cerca=rubrica&rubrica=1&persona=1091&nome=Paolo&cognome=Salvaneschi&titolo=Prof.) and
@@ -50,7 +50,7 @@ the book "[Security and Usability](http://books.google.com/books?id=wDVhy9EyEAEC
 
 
 ## Salvaneschi & Partners
-During my Master I joined *Salvaneschi & Partners* as *Quality Assurance Engineer*.
+During my master's studies I joined *Salvaneschi & Partners* as *Quality Assurance Engineer*.
 I was responsible for monitoring every phase of the software development process so as to ensure
 design quality, making sure that the software adheres to the standards and requirements agreed
 with stakeholders.
@@ -60,37 +60,41 @@ knowledgeable professionals offering auditing and consulting services to IT comp
 
 
 ## [United Academics](http://www.united-academics.org/)
-In 2010 I entered United Academics as web developer and soon became the *Lead Software Developer*.
-I worked there for 4 years and built a scraper and full-text search engine for Open Access papers,
-a [printing on demand website and web service](http://www.print2book.com/), a job vacancy portal
+In 2010 I entered *United Academics* as *Web Developer* and soon became the *Lead Software Developer*.
+In 4 years at *United Academics*, among other things, we built a web crawler and full-text search
+engine for Open Access papers,
+a [printing on demand website](http://www.print2book.com) and web service,
+a job portal
 and an online bookshop.
 
 [United Academics](http://www.united-academics.org/) is an international start-up which promotes
 Open Access publishing amongst researchers.
 
 
-## [Google Summer of Code]({% post_url 2014-04-21-gsoc2014 %})
-Worth a mention, my prestigious [Google Summer of Code experience]({% post_url 2014-04-21-gsoc2014 %}).
+## [Google]({% post_url 2014-04-21-gsoc2014 %})
+In 2014 I took part in the prestigious *Google Summer of Code* program as *Full-stack Web Developer*
+for [NeuroStars](http://neurostars.org) and [BioStars](https://www.biostars.org).
+Read more about this experience in my [Google Summer of Code post]({% post_url 2014-04-21-gsoc2014 %}).
 
 <br />
-<br />
-Visit also [my LinkedIn profile](http://www.linkedin.com/in/pcoffetti).
+<i class="fa fa-caret-right fa-2x" style="vertical-align: middle;"></i>
+To know more about my professional experience and expertise, check out
+[my LinkedIn profile](http://www.linkedin.com/in/pcoffetti).
 
 
-Technologies  <i class="fa fa-heart"></i>
+Technologies  <i class="fa fa-heart" style="margin-left: .5rem;"></i>
 =============
 A list of technologies I like to work and play with:
 
-- [Python](https://www.python.org/): I learned coding with [Java](https://www.java.com), but
+- [Python](https://www.python.org/): I learned coding with *Java*, but
 felt in love with *Python* and its elegance
-- [Django](https://www.djangoproject.com/): a Web frameworks that encourages rapid development
-and clean, pragmatic design
+- Web frameworks as [Django](https://www.djangoproject.com), [Flask](http://flask.pocoo.org), [Pyramid](http://www.pylonsproject.org)
+- [JavaScript](http://en.wikipedia.org/wiki/JavaScript)
 - [Full-text search](http://en.wikipedia.org/wiki/Full_text_search) engines like
 [Apache Solr](http://lucene.apache.org/solr/) and [Elasticsearch](http://www.elasticsearch.org/)
 - [RESTful webservice](http://en.wikipedia.org/wiki/Representational_state_transfer#Applied_to_web_services)
-- [Redis](http://redis.io/)
-- [Docker](https://www.docker.com/)
-- [Ansible](http://www.ansible.com/)
+- [NoSQL](http://en.wikipedia.org/wiki/NoSQL) technologies as [MongoDB](http://en.wikipedia.org/wiki/MongoDB) and data stores as [Redis](http://redis.io)
+- [Ansible](http://www.ansible.com), [Docker](https://www.docker.com), [Amazon Web Services](http://aws.amazon.com)
 
 
 

@@ -77,7 +77,7 @@
           {% if year == '2014' %}
             <article>
               <p>
-                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncatewords: 5, '...' | downcase }}</a>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncatewords: 5, '...' }}</a>
                 <time><i class="fa fa-calendar"></i> {{ post.date | date: '%d %B' }}</time>
               </p>
             </article>

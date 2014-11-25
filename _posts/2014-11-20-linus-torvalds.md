@@ -16,9 +16,9 @@ conference, but a very special one...
     <figcaption>Linus Torvalds at GSoC Reunion.</figcaption>
 </figure>
 
-After attending [Google Summer of Code]({% post_url 2014-04-21-gsoc2014 %}) I got invited by Google
-to attend the Google Summer of Code 10 year anniversary: 3 days of fun, activities, unconference
-sessions and talks in San Jose, CA, USA.
+After [Google Summer of Code]({% post_url 2014-04-21-gsoc2014 %}) I got invited by Google
+to attend the [Google Summer of Code 10 year anniversary]({% post_url 2014-10-26-gsoc-anniversary %}):
+3 days of fun activities, unconference sessions and talks in San Jose, CA, USA.
 
 Two big names, among others: Linus Torvalds and [Peter Norvig](http://en.wikipedia.org/wiki/Peter_Norvig).
 And two things stuck in my mind.

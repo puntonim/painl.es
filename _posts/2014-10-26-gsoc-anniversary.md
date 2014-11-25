@@ -10,7 +10,7 @@ to attend the **Google Summer of Code 10 year anniversary** in San Jose, Califor
 of fun activities, unconference sessions and talks.
 
 We went to [Great America](http://www.cagreatamerica.com) - actually Google reserved the entire
-theme park exclusively for us!! - and to visit the [Google Plex]({% post_url 2014-10-26-google-plex %}).
+theme park exclusively for us!! - and to visit the [Google Plex]({% post_url 2014-10-26-googleplex %}).
 But what impressed me the most is **FOSS people**.
 
 # FOSS people

@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Experience is overrated - Linus Torvalds"
-excerpt: ""
-tags: [experience, linus torvalds, linux]
+title: "\"Experience Is Overrated\" - Linus Torvalds"
+excerpt: "Experience Is Overrated by Linus Torvalds; Teach Yourself Programming in Ten Years by Peter Norvig"
+tags: [experience, linus torvalds, peter norvig, linux]
+ogimage: "/assets/img/2014-11-20-linus-torvalds/linus.jpg"
 ---
 
 I met [Linus Torvalds](http://en.wikipedia.org/wiki/Linus_Torvalds)! Well, actually it was just a
@@ -22,17 +23,17 @@ sessions and talks in San Jose, CA, USA.
 Two big names, among others: Linus Torvalds and [Peter Norvig](http://en.wikipedia.org/wiki/Peter_Norvig).
 And two things stuck in my mind.
 
-# Experience is overrated
+# <sup><i class="fa fa-quote-left"></i></sup> Experience is overrated <sup><i class="fa fa-quote-right"></i></sup>
 
-Torvalds was asked how he could write the Linux kernel when he was just a young inexperienced software engineer.
+Linus Torvalds was asked how he could write the Linux kernel when he was just a young inexperienced software engineer.
 And that is how he replied: "Experience is somehow overrated..."
 
 
-# Teach Yourself Programming in Ten Years
+# <sup><i class="fa fa-quote-left"></i></sup> Teach Yourself Programming in Ten Years <sup><i class="fa fa-quote-right"></i></sup>
 
-Norvig, Director of Research at Google, made fun of books like "Teach Yourself C++ in 10 Days".
+Peter Norvig, Director of Research at Google, made fun of books like "Teach Yourself C++ in 10 Days".
 He said it takes 10 years to deeply understand a programming language: in ten days or a month
 or six months a Java developer f.i. could only learn C++ syntax and write Java-like code with C++ syntax.
 
 So, learning a programming language is [a long process](http://www.norvig.com/21-days.html)...
-you'd better start early!
+we'd better start early!

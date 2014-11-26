@@ -14,7 +14,9 @@ ogimage: "/assets/img/projects/neurostars-g.png"
 <a href="https://github.com/ialbert/biostar-central/commits?author=nimiq">main contributors</a>
 of <a href="https://github.com/ialbert/biostar-central">BioStar</a>, the engine which powers
 <a href="http://neurostars.org/">NeuroStars</a>. I am also one of the two system administrators
-of <a href="http://neurostars.org/">neurostars.org</a>.
+of <a href="http://neurostars.org/">neurostars.org</a>. NeuroStars is
+<a href="https://github.com/nimiq/biostar-central">hosted on
+GitHub<i class="fa fa-github fa-lg" style="vertical-align: baseline; margin-left: .3rem;"></i></a>
 </div>
 
 [NeuroStars](http://neurostars.org/) is a question-and-answer website for the
@@ -53,7 +55,7 @@ Technologies
 ============
 *NeuroStars* is powered by the [BioStar](https://github.com/ialbert/biostar-central) framework.
 
-A **basic deployment** of *BioStar* includes the following software:
+A **basic deployment** of *BioStar* includes the following software stack:
 
 - [Python](https://www.python.org/): the main programming language;
 - [Django](https://www.djangoproject.com/): the web framework component;

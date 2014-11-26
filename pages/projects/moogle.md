@@ -13,8 +13,9 @@ ogimage: "/assets/img/projects/moogle-g.png"
 <strong>TL;DR</strong> I am the author of Moogle.
 Moogle is
 <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source</a>, 
-<a href="https://github.com/nimiq/moogle">hosted on GitHub</a> and
-a demo site will be available soon!
+<a href="https://github.com/nimiq/moogle">hosted on 
+GitHub<i class="fa fa-github fa-lg" style="vertical-align: baseline; margin-left: .3rem;"></i></a><br />
+A demo site will be available soon!
 </div>
 
 *You are searching for the sushi restaurant that a friend of yours recommended last month:
@@ -109,3 +110,13 @@ Resources
 *Moogle* is [hosted on GitHub](https://github.com/nimiq/moogle). A demo website will be available
 soon! In the meantime you can read [my thesis (English)]({{ site.baseurl }}/assets/pdf/moogle/moogle-thesis.pdf)
 and [some slides (Italian)]({{ site.baseurl }}/assets/pdf/moogle/moogle-slides.pdf).
+
+Key Technologies
+================
+Key technologies used in *Moogle*:
+
+- Python, Django
+- PostgreSQL, SQLAlchemy, Redis, redis-py
+- Apache Solr, solrpy
+- OAuth, requests-oauthlib, Facebook Graph API, Twitter REST API, Dropbox Core API, Google Gmail API, Google Drive API
+- Git, GitHub

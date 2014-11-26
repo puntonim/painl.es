@@ -13,8 +13,9 @@ ogimage: "/assets/img/projects/ansible-g.png"
 <strong>TL;DR</strong> I am the author of Ansible-Biostar.
 Ansible-Biostar is
 <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source</a>, 
-<a href="https://github.com/nimiq/ansible-biostar">hosted on GitHub</a> and
-available in <a href="https://galaxy.ansible.com/list#/roles/1057">Ansible Galaxy</a>.
+available in <a href="https://galaxy.ansible.com/list#/roles/1057">Ansible Galaxy</a> and
+<a href="https://github.com/nimiq/ansible-biostar">hosted on 
+GitHub<i class="fa fa-github fa-lg" style="vertical-align: baseline; margin-left: .3rem;"></i></a>
 </div>
 
 An [Ansible](http://www.ansible.com/) playbook to automatize the deployment of
@@ -44,3 +45,15 @@ and [Google Compute Engine](https://cloud.google.com/compute/) - still experimen
 
 Find more info in the codebase 
 [hosted at GitHub](https://github.com/nimiq/ansible-biostar)!
+
+Key Technologies
+================
+Key technologies used in *Ansible-Biostar*:
+
+- Ansible
+- Docker
+- Linux, Ubuntu, Apt
+- Amazon Web Services (AWS), Amazon Elastic Compute Cloud (EC2), Google Cloud Platform, Google Compute Engine (GCE)
+- Python, Pip, Nginx, Waitress, Whitenoise
+- BioStar, PostgreSQL
+- Git, GitHub

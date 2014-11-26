@@ -12,7 +12,7 @@ ogimage: "/assets/img/projects/moogle-g.png"
 <div class="initial-note">
 <strong>TL;DR</strong> I am the author of Moogle.
 Moogle is
-<a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source</a>, 
+<a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source</a> and 
 <a href="https://github.com/nimiq/moogle">hosted on 
 GitHub<i class="fa fa-github fa-lg" style="vertical-align: baseline; margin-left: .3rem;"></i></a><br />
 A demo site will be available soon!

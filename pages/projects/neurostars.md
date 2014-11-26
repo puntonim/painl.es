@@ -2,7 +2,7 @@
 categories: [project]
 title:  "NeuroStars"
 tags: [neurostars, biostar]
-excerpt: "NeuroStars: a question-and-answer website for the neuroinformatics community"
+excerpt: "NeuroStars: a questions and answers website for the neuroinformatics community"
 permalink: /neurostars/index.html
 comments: true
 cssfile: "/assets/css/pages/projects/neurostars.css"
@@ -19,7 +19,7 @@ of <a href="http://neurostars.org/">neurostars.org</a>. NeuroStars is
 GitHub<i class="fa fa-github fa-lg" style="vertical-align: baseline; margin-left: .3rem;"></i></a>
 </div>
 
-[NeuroStars](http://neurostars.org/) is a question-and-answer website for the
+[NeuroStars](http://neurostars.org/) is a questions and answers website for the
 *neuroinformatics* community. 
 
 <img src="{{ site.baseurl }}/assets/img/projects/neurostars-g.png" alt="NeuroStars icon" class="right">

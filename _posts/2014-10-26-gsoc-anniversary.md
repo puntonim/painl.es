@@ -17,7 +17,7 @@ But what impressed me the most is **FOSS people**.
 *Google Summer of Code* is a program meant to foster the
 [Free and Open Source Software (FOSS)](http://en.wikipedia.org/wiki/Free_and_open-source_software) world
 and thus the attendees of the 10 year anniversary event were techies involved in some FOSS project.
-After chatting with many on them, I realized that FOSS people can be of two type, based on 
+After chatting with many on them, I realized that FOSS people can be of two types, based on 
 the nature of their motivation.
 
 The *first type* of volunteers has a strong passion for **technology**. Their contribution to the FOSS world
@@ -32,6 +32,6 @@ and help the community and so they do what they are the best at: writing softwar
 source projects! Usually this type of person is open minded and very knowledgeable, he thinks
 that technology is relevant, but it is just a tool like many other in our society.
 This type amazes me. I remember in particular a guy, a philosopher, who I had breakfast with: he
-said he studied in particular German philosophers in the 1900s. So, recalling my high school
+said he studied in particular German philosophers from the 1900s. So, recalling my high school
 studies, I asked him what *Heidegger* would think of modern technology. His answer was... well...
 critical and... hard to understand, something like [this](https://belate.wordpress.com/2010/07/12/heidegger-modern-technology/)!!

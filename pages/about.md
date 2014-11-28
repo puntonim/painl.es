@@ -55,7 +55,7 @@ I was responsible for monitoring every phase of the software development process
 design quality, making sure that the software adheres to the standards and requirements agreed
 with stakeholders.
 
-*Salvaneschi & Partners* is small-sized software engineering company run by a group of
+*Salvaneschi & Partners* is small-sized software engineering company run by
 knowledgeable professionals offering auditing and consulting services.
 
 

@@ -6,7 +6,7 @@ tags: [bus, bell cord, silicon valley, san francisco]
 ogimage: "/assets/img/2014-11-25-bus-bell-cord/cord2.jpg"
 ---
 
-Imagine you are in a bus, you want to signal a stop and you suddenly realize that there is **no
+Imagine you are in a bus, you want to signal a stop and suddenly realize that there is **no
 red button** to push. Red buttons are one of the few things that you expect to find in any bus
 in any corner of the world, so you get a bit disappointed.
 

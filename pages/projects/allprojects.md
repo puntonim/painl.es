@@ -7,7 +7,7 @@ cssfile: "/assets/css/pages/allprojects.css"
 
 
 The following is a selection of the most recent and fun projects I worked on.
-I also made [minor contributions]({{ site.baseurl }}/about/#foss-contributions) to other free and open-source projects.
+I also made [minor contributions]({{ site.baseurl }}/about/#open-source-contributions) to other free and open-source projects.
 
 [Moogle]({{ site.baseurl }}/moogle/)
 ========

@@ -8,7 +8,7 @@ cssfile: "/assets/css/pages/about.css"
 I am Paolo.
 Software engineer. [Python](https://www.python.org/) enthusiast,
 [Django](https://www.djangoproject.com/) lover,
-[Open Source contributor](#foss-contributions) and
+[Open Source contributor](#open-source-contributions) and
 [Google Summer of Code]({% post_url 2014-04-21-gsoc2014 %}) participant.
 Digital privacy paranoid.
 Co–author of "[Security and Usability](http://books.google.com/books?id=wDVhy9EyEAEC&lpg=PP1&pg=PA221#v=onepage&q&f=false)", published by O'Reilly Media.

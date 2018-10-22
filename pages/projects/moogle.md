@@ -13,7 +13,7 @@ ogimage: "/assets/img/projects/moogle-g.png"
 <strong>TL;DR</strong> I am the author of Moogle.
 Moogle is
 <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source</a> and 
-<a href="https://github.com/nimiq/moogle">hosted on 
+<a href="https://github.com/puntonim/moogle">hosted on 
 GitHub<i class="fa fa-github fa-lg" style="vertical-align: baseline; margin-left: .3rem;"></i></a><br />
 A demo site will be available soon!
 </div>
@@ -107,7 +107,7 @@ Screenshots
 
 Resources
 =========
-*Moogle* is [hosted on GitHub](https://github.com/nimiq/moogle). A demo website will be available
+*Moogle* is [hosted on GitHub](https://github.com/puntonim/moogle). A demo website will be available
 soon! In the meantime you can read [my thesis (English)]({{ site.baseurl }}/assets/pdf/moogle/moogle-thesis.pdf)
 and [some slides (Italian)]({{ site.baseurl }}/assets/pdf/moogle/moogle-slides.pdf).
 

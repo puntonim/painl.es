@@ -14,7 +14,7 @@ ogimage: "/assets/img/projects/ansible-g.png"
 Ansible-Biostar is
 <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source</a>, 
 available in <a href="https://galaxy.ansible.com/list#/roles/1057">Ansible Galaxy</a> and
-<a href="https://github.com/nimiq/ansible-biostar">hosted on 
+<a href="https://github.com/puntonim/ansible-biostar">hosted on 
 GitHub<i class="fa fa-github fa-lg" style="vertical-align: baseline; margin-left: .3rem;"></i></a>
 </div>
 
@@ -40,11 +40,11 @@ and [Google Compute Engine](https://cloud.google.com/compute/) - still experimen
 - Ship a [BioStar](https://github.com/ialbert/biostar-central/) based website with
 [Nginx](http://nginx.org/) as reverse proxy server, 
 [Waitress](http://waitress.readthedocs.org/en/latest/) as webserver
-- Easy to [configure](https://github.com/nimiq/ansible-biostar/blob/master/README.md)
+- Easy to [configure](https://github.com/puntonim/ansible-biostar/blob/master/README.md)
 - Available in [Ansible Galaxy](https://galaxy.ansible.com/list#/roles/1057)
 
 Find more info in the codebase 
-[hosted at GitHub](https://github.com/nimiq/ansible-biostar)!
+[hosted at GitHub](https://github.com/puntonim/ansible-biostar)!
 
 Key Technologies
 ================

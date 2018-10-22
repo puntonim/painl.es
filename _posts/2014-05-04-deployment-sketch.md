@@ -45,7 +45,7 @@ There is still a lot to do, so this is nothing more than a starting point.
 # How To Deploy To A Local Development Env
 - Fork [BioStar repository](https://github.com/ialbert/biostar-central) on Github.
 
-    *Note*: you should temporary use [my repo](https://github.com/nimiq/biostar-central).
+    *Note*: you should temporary use [my repo](https://github.com/puntonim/biostar-central).
 - Run the following commands:
 
         mkdir biostar
@@ -82,7 +82,7 @@ The developer edits the code, Django detects the change and reload the server.
 
 ## Requirements For A Development Environment
 After a brief
-[consultation](https://github.com/nimiq/biostar-central/commit/a10800166d63f2bbb957b98d791430fc1e2126a6#commitcomment-6145672)
+[consultation](https://github.com/puntonim/biostar-central/commit/a10800166d63f2bbb957b98d791430fc1e2126a6#commitcomment-6145672)
 with Roman and Istvan we decided to:
 
 - always use a proper *web server*, even in development: [waitress](https://pypi.python.org/pypi/waitress/0.8.8) + [whitenoise](https://pypi.python.org/pypi/whitenoise/1.0.1) are good candidates;

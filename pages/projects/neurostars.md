@@ -15,7 +15,7 @@ ogimage: "/assets/img/projects/neurostars-g.png"
 of <a href="https://github.com/ialbert/biostar-central">BioStar</a>, the engine which powers
 <a href="http://neurostars.org/">NeuroStars</a>. I am also one of the two system administrators
 of <a href="http://neurostars.org/">neurostars.org</a>. NeuroStars is
-<a href="https://github.com/nimiq/biostar-central">hosted on
+<a href="https://github.com/puntonim/biostar-central">hosted on
 GitHub<i class="fa fa-github fa-lg" style="vertical-align: baseline; margin-left: .3rem;"></i></a>
 </div>
 
@@ -100,18 +100,18 @@ List of my main contributions:
 - [Ansible-Biostar]({{ site.baseurl }}/ansible-biostar/) playbook to automatize the deployment
 inside [Docker](https://www.docker.com/) containers;
 - designed a [basic RESTful webservice]({% post_url 2014-05-13-restful-webservice-sketch %});
-currently [working on a more feature-rich version](https://github.com/nimiq/biostar-central/commits/api)
+currently [working on a more feature-rich version](https://github.com/puntonim/biostar-central/commits/api)
 based on [Django REST Framework](http://www.django-rest-framework.org/);
 - [multi-tag filtering](https://github.com/INCF/biostar-central/pull/31);
 - [automated testing with Travis-CI]({% post_url 2014-07-10-travis-ci %});
 - [login using ORCID as social provider]({% post_url 2014-07-22-integration-with-orcid %}),
 feature implemented by [extending Django-allauth]({% post_url 2014-08-07-django-allauth-orcid %});
 - [embed tweets in posts]({% post_url 2014-08-16-embed-tweets %});
-- currently [working on continuous delivery](https://github.com/nimiq/biostar-central/commit/1771aa8614d82a3faf9467c9c1c60cd62555af05) based on GitHub Webhooks.
+- currently [working on continuous delivery](https://github.com/puntonim/biostar-central/commit/1771aa8614d82a3faf9467c9c1c60cd62555af05) based on GitHub Webhooks.
 
 
 Codebase
 ========
 - *NeuroStars* repository: <https://github.com/INCF/biostar-central>
 - *BioStar* repository: <https://github.com/ialbert/biostar-central>
-- My forked repository, deployed to [neurostars.org](http://neurostars.org/): <https://github.com/nimiq/biostar-central>
+- My forked repository, deployed to [neurostars.org](http://neurostars.org/): <https://github.com/puntonim/biostar-central>

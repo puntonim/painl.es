@@ -14,7 +14,7 @@ ogimage: "/assets/img/projects/docker-g.png"
 Docker-PostgreSQL is
 <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source</a>,
 available in <a href="https://registry.hub.docker.com/u/nimiq/postgresql93/">Docker Hub Registry</a> and
-<a href="https://github.com/nimiq/docker-postgresql93">hosted on
+<a href="https://github.com/puntonim/docker-postgresql93">hosted on
 GitHub<i class="fa fa-github fa-lg" style="vertical-align: baseline; margin-left: .3rem;"></i></a>
 </div>
 
@@ -42,7 +42,7 @@ a container has many strange corner cases that are hard to get right if you are 
 familiar with the Unix system model. This can cause a lot of strange problems. Baseimage-docker
 gets everything right*".
 
-[Docker-PostgreSQL](https://github.com/nimiq/docker-postgresql93)
+[Docker-PostgreSQL](https://github.com/puntonim/docker-postgresql93)
 ships a full [PostgreSQL 9.3](http://www.postgresql.org/) server inside a *Docker container*
 using *baseimage-docker*. All you have to do is pulling
 Docker-PostgreSQL from [Docker Hub Registry](https://registry.hub.docker.com/u/nimiq/postgresql93/)
@@ -51,7 +51,7 @@ and run it!
     $ docker run nimiq/postgresql
 
 Now enjoy your new *PostgreSQL* server.
-For more info and examples visit [README](https://github.com/nimiq/docker-postgresql93/blob/master/README.md).
+For more info and examples visit [README](https://github.com/puntonim/docker-postgresql93/blob/master/README.md).
 
 
 Features
@@ -66,7 +66,7 @@ Features
 - Available in [Docker Hub Registry](https://registry.hub.docker.com/u/nimiq/postgresql93)
 
 Find more info in the codebase 
-[hosted at GitHub](https://github.com/nimiq/docker-postgresql93/)!
+[hosted at GitHub](https://github.com/puntonim/docker-postgresql93/)!
 
 
 Key Technologies

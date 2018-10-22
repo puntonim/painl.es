@@ -13,7 +13,7 @@ Software engineer. [Python](https://www.python.org/) enthusiast,
 Digital privacy paranoid.
 Co–author of "[Security and Usability](http://books.google.com/books?id=wDVhy9EyEAEC&lpg=PP1&pg=PA221#v=onepage&q&f=false)", published by O'Reilly Media.
 
-<i class="fa fa-caret-right fa-2x" style="vertical-align: middle;"></i> More about my professional experience and expertise in my [LinkedIn](http://www.linkedin.com/in/pcoffetti) and [GitHub](https://github.com/nimiq) profiles.
+<i class="fa fa-caret-right fa-2x" style="vertical-align: middle;"></i> More about my professional experience and expertise in my [LinkedIn](http://www.linkedin.com/in/pcoffetti) and [GitHub](https://github.com/puntonim) profiles.
 
 Bio
 ===
@@ -120,7 +120,7 @@ All the free and open-source projects already listed in the [projects page]({{ s
 Plus minor contributions to the following projects:
 
 - [Bookie](https://bookie.io/): wrote a couple of fixes, a recipe about how to [setup
-a development environment in Mac OS X](https://gist.github.com/nimiq/9746746)
+a development environment in Mac OS X](https://gist.github.com/puntonim/9746746)
 and a [development proposal]({% post_url 2014-04-21-gsoc2014 %}#bookie-i-classfa-fa-times-stylecolor-rgb189-65-28i)
 - [Django-allauth](https://github.com/pennersr/django-allauth): implemented the
 [support for ORCID provider]({% post_url 2014-08-07-django-allauth-orcid %})

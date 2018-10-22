@@ -12,7 +12,7 @@ ogimage: "/assets/img/projects/promptastic-g.png"
 <div class="initial-note">
 <strong>TL;DR</strong> I am the author of Promptastic. Promptastic is
 <a href="http://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source</a> and
-<a href="https://github.com/nimiq/promptastic">hosted on 
+<a href="https://github.com/puntonim/promptastic">hosted on 
 GitHub<i class="fa fa-github fa-lg" style="vertical-align: baseline; margin-left: .3rem;"></i></a>
 </div>
 
@@ -42,12 +42,12 @@ environment;
 - adds a special label in case of SSH connection;
 - any feature can be enabled/disabled via a config file;
 - colored output: there are a bunch of themes to choose from and new themes can be easily created;
-- simple and automatic [installation procedure](https://github.com/nimiq/promptastic/blob/master/INSTALL.md);
+- simple and automatic [installation procedure](https://github.com/puntonim/promptastic/blob/master/INSTALL.md);
 - written in Python.
 
-More details and screenshot in [Info.md](https://github.com/nimiq/promptastic/blob/master/Info.md).
+More details and screenshot in [Info.md](https://github.com/puntonim/promptastic/blob/master/Info.md).
 *Promptastic* is [FOSS](http://en.wikipedia.org/wiki/Free_and_open-source_software) and its codebase
-is [hosted on GitHub](https://github.com/nimiq/promptastic).
+is [hosted on GitHub](https://github.com/puntonim/promptastic).
 
 Key Technologies
 ================
